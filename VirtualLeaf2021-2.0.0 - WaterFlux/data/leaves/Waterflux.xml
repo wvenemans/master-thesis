@@ -1,0 +1,385 @@
+<!DOCTYPE leaf>
+<leaf date="Wed Apr 23 16:36:33 2025" name="/home/willem/Documents/VirtualLeaf2021-2.0.0/data/leaves/Waterflux.xml" simtime="2480">
+  <parameter>
+    <par val="white" name="arrowcolor"/>
+    <par val="10" name="arrowsize"/>
+    <par val="red" name="textcolor"/>
+    <par val="1" name="cellnumsize"/>
+    <par val="1" name="nodenumsize"/>
+    <par val="1" name="node_mag"/>
+    <par val="1" name="outlinewidth"/>
+    <par val="forestgreen" name="cell_outline_color"/>
+    <par val="10" name="resize_stride"/>
+    <par val="0" name="export_interval"/>
+    <par val="cell." name="export_fn_prefix"/>
+    <par val="100" name="storage_stride"/>
+    <par val="500" name="xml_storage_stride"/>
+    <par val="tutorial1_data" name="datadir"/>
+    <par val="1" name="T"/>
+    <par val="1" name="lambda_length"/>
+    <par val="4" name="yielding_threshold"/>
+    <par val="0" name="lambda_celllength"/>
+    <par val="60" name="target_length"/>
+    <par val="5" name="cell_expansion_rate"/>
+    <par val="10" name="cell_div_expansion_rate"/>
+    <par val="true" name="auxin_dependent_growth"/>
+    <par val="0.0001" name="ode_accuracy"/>
+    <par val="0.4" name="mc_stepsize"/>
+    <par val="0.2" name="mc_cell_stepsize"/>
+    <par val="1000" name="energy_threshold"/>
+    <par val="0" name="bend_lambda"/>
+    <par val="0" name="alignment_lambda"/>
+    <par val="2" name="rel_cell_div_threshold"/>
+    <par val="2" name="rel_perimeter_stiffness"/>
+    <par val="0.05" name="collapse_node_threshold"/>
+    <par val="0.2" name="morphogen_div_threshold"/>
+    <par val="0.01" name="morphogen_expansion_threshold"/>
+    <par val="true" name="copy_wall"/>
+    <par val="0" name="source"/>
+    <par name="D">
+      <valarray>
+        <val v="1e-06"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+      </valarray>
+    </par>
+    <par name="initval">
+      <valarray>
+        <val v="0"/>
+        <val v="1"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+      </valarray>
+    </par>
+    <par val="1" name="k1"/>
+    <par val="0.3" name="k2"/>
+    <par val="1" name="r"/>
+    <par val="1" name="kr"/>
+    <par val="1" name="km"/>
+    <par val="1" name="Pi_tot"/>
+    <par val="0.36" name="transport"/>
+    <par val="1" name="ka"/>
+    <par val="0" name="pin_prod"/>
+    <par val="0" name="pin_prod_in_epidermis"/>
+    <par val="0" name="pin_breakdown"/>
+    <par val="0.001" name="pin_breakdown_internal"/>
+    <par val="0.001" name="aux1prod"/>
+    <par val="0" name="aux1prodmeso"/>
+    <par val="0.001" name="aux1decay"/>
+    <par val="0.1" name="aux1decaymeso"/>
+    <par val="0.036" name="aux1transport"/>
+    <par val="0" name="aux_cons"/>
+    <par val="0.0001" name="aux_breakdown"/>
+    <par val="1" name="kaux1"/>
+    <par val="1" name="kap"/>
+    <par val="0.0001" name="leaf_tip_source"/>
+    <par val="0.0001" name="sam_efflux"/>
+    <par val="10" name="sam_auxin"/>
+    <par val="0" name="sam_auxin_breakdown"/>
+    <par val="0.002" name="van3prod"/>
+    <par val="0.1" name="van3autokat"/>
+    <par val="10" name="van3sat"/>
+    <par val="0.3" name="k2van3"/>
+    <par val="0.1" name="dt"/>
+    <par val="10" name="rd_dt"/>
+    <par val="0.174533" name="potential_slide_angle"/>
+    <par val="50" name="elastic_modulus"/>
+    <par val="true" name="movie"/>
+    <par val="100000" name="nit"/>
+    <par val="65535" name="compatibility_level"/>
+    <par val="1e+06" name="maxt"/>
+    <par val="-1" name="rseed"/>
+    <par val="16" name="constituous_expansion_limit"/>
+    <par val="1" name="vessel_inh_level"/>
+    <par val="0.25" name="vessel_expansion_rate"/>
+    <par val="0" name="d"/>
+    <par val="0" name="e"/>
+    <par val="0" name="f"/>
+    <par val="0" name="c"/>
+    <par val="0" name="mu"/>
+    <par val="0" name="nu"/>
+    <par val="0" name="rho0"/>
+    <par val="0" name="rho1"/>
+    <par val="0" name="c0"/>
+    <par val="0" name="gamma"/>
+    <par val="0" name="eps"/>
+    <par val="0" name="betaN"/>
+    <par val="0" name="gammaN"/>
+    <par val="0" name="betaD"/>
+    <par val="0" name="gammaD"/>
+    <par val="0" name="betaR"/>
+    <par val="0" name="gammaR"/>
+    <par val="1" name="tau"/>
+    <par val="1" name="kt"/>
+    <par val="1" name="kc"/>
+    <par val="0" name="krs"/>
+    <par name="k">
+      <valarray>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+      </valarray>
+    </par>
+    <par val="0" name="i1"/>
+    <par val="0" name="i2"/>
+    <par val="false" name="b4"/>
+    <par val="." name="dir1"/>
+    <par val="." name="dir2"/>
+  </parameter>
+  <nodes target_length="3.09017" n="26">
+    <node fixed="false" x="26.1788" boundary="true" y="7.78577" sam="false"/>
+    <node fixed="false" x="23.3219" boundary="true" y="17.2894" sam="false"/>
+    <node fixed="false" x="10.6286" boundary="true" y="24.5796" sam="false"/>
+    <node fixed="false" x="-9.65926" boundary="true" y="23.9326" sam="false"/>
+    <node fixed="false" x="-18.7659" boundary="true" y="19.3426" sam="false"/>
+    <node fixed="false" x="-26.5953" boundary="true" y="-4.9556" sam="false"/>
+    <node fixed="false" x="-23.9595" boundary="true" y="-14.8745" sam="false"/>
+    <node fixed="false" x="-10.9833" boundary="true" y="-24.0177" sam="false"/>
+    <node fixed="false" x="8.91656" boundary="true" y="-23.875" sam="false"/>
+    <node fixed="false" x="19.6387" boundary="true" y="-21.0012" sam="false"/>
+    <node fixed="false" x="0.63047" boundary="true" y="24.0845" sam="false"/>
+    <node fixed="false" x="-0.477649" boundary="true" y="-22.8276" sam="false"/>
+    <node fixed="false" x="1.2134" boundary="false" y="13.5198" sam="false"/>
+    <node fixed="false" x="-0.781647" boundary="false" y="-11.8363" sam="false"/>
+    <node fixed="false" x="26.5896" boundary="true" y="-12.6779" sam="false"/>
+    <node fixed="false" x="-23.9294" boundary="true" y="11.775" sam="false"/>
+    <node fixed="false" x="26.2568" boundary="true" y="-2.33565" sam="false"/>
+    <node fixed="false" x="2.78556" boundary="false" y="4.41416" sam="false"/>
+    <node fixed="false" x="17.7127" boundary="false" y="-2.43115" sam="false"/>
+    <node fixed="false" x="9.81361" boundary="false" y="-0.114313" sam="false"/>
+    <node fixed="false" x="-26.1371" boundary="true" y="3.7611" sam="false"/>
+    <node fixed="false" x="-1.70974" boundary="false" y="-2.63741" sam="false"/>
+    <node fixed="false" x="-17.7644" boundary="false" y="1.77921" sam="false"/>
+    <node fixed="false" x="-9.60675" boundary="false" y="-0.158518" sam="false"/>
+    <node fixed="false" x="-17.5654" boundary="true" y="-20.4232" sam="false"/>
+    <node fixed="false" x="17.969" boundary="true" y="21.89" sam="false"/>
+  </nodes>
+  <cells offsetx="0" nchem="1" offsety="0" magnfication="1" n="4" base_area="293.893">
+    <cell centroid_y="-10.898" at_boundary="true" cell_type="0" total_neighbor_pressure="1062.51" target_area="720.973" pressure="291.597" centroid_x="11.177" area="575.175" pin_fixed="false" neighbour_number="3" boundary="0" source="false" average_neighbor_pressure="354.171" target_length="60" dead="false" lambda_celllength="0" fixed="false" total_neighbour_area="1626.66" nofn_pressure="2286.5" nofn_average_pressure="309.884" div_counter="2" index="0">
+      <node n="21" base_length="7.70464" stiffness="nan"/>
+      <node n="13" base_length="9.76582" stiffness="nan"/>
+      <node n="11" base_length="8.31817" stiffness="1"/>
+      <node n="8" base_length="9.34378" stiffness="nan"/>
+      <node n="9" base_length="9.14877" stiffness="nan"/>
+      <node n="14" base_length="8.81009" stiffness="1"/>
+      <node n="16" base_length="7.66564" stiffness="nan"/>
+      <node n="18" base_length="7.10142" stiffness="nan"/>
+      <node n="19" base_length="6.97107" stiffness="nan"/>
+      <node n="17" base_length="6.97345" stiffness="1"/>
+      <wall w="7"/>
+      <wall w="0"/>
+      <wall w="1"/>
+      <wall w="5"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell centroid_y="10.9056" at_boundary="true" cell_type="0" total_neighbor_pressure="1004.91" target_area="718.473" pressure="349.196" centroid_x="-9.95183" area="543.875" pin_fixed="false" neighbour_number="3" boundary="0" source="false" average_neighbor_pressure="334.971" target_length="0" dead="false" lambda_celllength="0" fixed="false" total_neighbour_area="1657.96" nofn_pressure="2344.1" nofn_average_pressure="260.456" div_counter="2" index="1">
+      <node n="17" base_length="7.70027" stiffness="1"/>
+      <node n="12" base_length="9.46445" stiffness="nan"/>
+      <node n="10" base_length="9.20502" stiffness="1"/>
+      <node n="3" base_length="9.04915" stiffness="nan"/>
+      <node n="4" base_length="7.67383" stiffness="nan"/>
+      <node n="15" base_length="7.11078" stiffness="1"/>
+      <node n="20" base_length="7.30197" stiffness="nan"/>
+      <node n="22" base_length="7.02445" stiffness="nan"/>
+      <node n="23" base_length="6.9663" stiffness="nan"/>
+      <node n="21" base_length="6.97345" stiffness="1"/>
+      <wall w="3"/>
+      <wall w="4"/>
+      <wall w="5"/>
+      <wall w="6"/>
+      <chem n="1">
+        <val v="0"/>
+      </chem>
+    </cell>
+    <cell centroid_y="10.9768" at_boundary="true" cell_type="0" total_neighbor_pressure="640.793" target_area="720.973" pressure="352.004" centroid_x="13.4405" area="544.971" pin_fixed="false" neighbour_number="2" boundary="0" source="false" average_neighbor_pressure="320.397" target_length="0" dead="false" lambda_celllength="0" fixed="false" total_neighbour_area="1119.05" nofn_pressure="2067.43" nofn_average_pressure="428.314" div_counter="2" index="2">
+      <node n="0" base_length="9.12418" stiffness="nan"/>
+      <node n="1" base_length="5.85309" stiffness="nan"/>
+      <node n="25" base_length="6.51472" stiffness="nan"/>
+      <node n="2" base_length="9.01198" stiffness="nan"/>
+      <node n="10" base_length="9.41251" stiffness="nan"/>
+      <node n="12" base_length="7.70027" stiffness="1"/>
+      <node n="17" base_length="6.97107" stiffness="1"/>
+      <node n="19" base_length="7.10142" stiffness="nan"/>
+      <node n="18" base_length="7.66564" stiffness="nan"/>
+      <node n="16" base_length="8.43477" stiffness="1"/>
+      <wall w="1"/>
+      <wall w="2"/>
+      <wall w="3"/>
+      <chem n="1">
+        <val v="0"/>
+      </chem>
+    </cell>
+    <cell centroid_y="-10.2857" at_boundary="true" cell_type="0" total_neighbor_pressure="640.793" target_area="718.473" pressure="361.314" centroid_x="-13.0691" area="537.816" pin_fixed="false" neighbour_number="2" boundary="0" source="false" average_neighbor_pressure="320.397" target_length="0" dead="false" lambda_celllength="0" fixed="false" total_neighbour_area="1119.05" nofn_pressure="2067.43" nofn_average_pressure="428.314" div_counter="2" index="3">
+      <node n="5" base_length="9.87037" stiffness="nan"/>
+      <node n="6" base_length="7.06535" stiffness="nan"/>
+      <node n="24" base_length="6.24976" stiffness="nan"/>
+      <node n="7" base_length="10.007" stiffness="nan"/>
+      <node n="11" base_length="9.76582" stiffness="nan"/>
+      <node n="13" base_length="7.70464" stiffness="1"/>
+      <node n="21" base_length="6.9663" stiffness="nan"/>
+      <node n="23" base_length="7.02445" stiffness="nan"/>
+      <node n="22" base_length="7.30197" stiffness="nan"/>
+      <node n="20" base_length="7.27815" stiffness="1"/>
+      <wall w="6"/>
+      <wall w="7"/>
+      <wall w="8"/>
+      <chem n="1">
+        <val v="0"/>
+      </chem>
+    </cell>
+    <boundary_polygon centroid_y="0.0514489" at_boundary="false" cell_type="0" total_neighbor_pressure="0" target_area="1" pressure="-585.785" centroid_x="0.59592" area="293.893" pin_fixed="false" neighbour_number="0" boundary="0" source="false" average_neighbor_pressure="nan" target_length="0" dead="false" lambda_celllength="0" fixed="false" total_neighbour_area="0" nofn_pressure="0" nofn_average_pressure="nan" div_counter="0" index="-1">
+      <node n="0" base_length="nan" stiffness="nan"/>
+      <node n="1" base_length="nan" stiffness="nan"/>
+      <node n="25" base_length="nan" stiffness="nan"/>
+      <node n="2" base_length="nan" stiffness="nan"/>
+      <node n="10"/>
+      <node n="3" base_length="nan" stiffness="nan"/>
+      <node n="4" base_length="nan" stiffness="nan"/>
+      <node n="15" base_length="nan" stiffness="nan"/>
+      <node n="20"/>
+      <node n="5" base_length="nan" stiffness="nan"/>
+      <node n="6" base_length="nan" stiffness="nan"/>
+      <node n="24" base_length="nan" stiffness="nan"/>
+      <node n="7" base_length="nan" stiffness="nan"/>
+      <node n="11"/>
+      <node n="8" base_length="nan" stiffness="nan"/>
+      <node n="9" base_length="nan" stiffness="nan"/>
+      <node n="14" base_length="nan" stiffness="nan"/>
+      <node n="16"/>
+      <wall w="2"/>
+      <wall w="8"/>
+      <wall w="0"/>
+      <wall w="4"/>
+      <chem n="1">
+        <val v="0"/>
+      </chem>
+    </boundary_polygon>
+  </cells>
+  <walls n="9">
+    <wall c1="0" c2="-1" n1="11" wall_type="normal" length="41.7446" n2="16" viz_flux="0" index="3">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="0" c2="2" n1="16" wall_type="normal" length="25.1371" n2="17" viz_flux="0" index="5">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="2" c2="-1" n1="16" wall_type="normal" length="44.9318" n2="10" viz_flux="0" index="1">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="2" c2="1" n1="10" wall_type="normal" length="19.8212" n2="17" viz_flux="0" index="4">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="1" c2="-1" n1="10" wall_type="normal" length="37.9626" n2="20" viz_flux="0" index="6">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="0" c2="1" n1="21" wall_type="normal" length="87.1229" n2="17" viz_flux="0" index="7">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="1" c2="3" n1="20" wall_type="normal" length="25.2657" n2="21" viz_flux="0" index="8">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="0" c2="3" n1="21" wall_type="normal" length="20.2411" n2="11" viz_flux="0" index="0">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="3" c2="-1" n1="20" wall_type="normal" length="45.5303" n2="11" viz_flux="0" index="2">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+  </walls>
+  <nodesets n="0"/>
+  <settings>
+    <setting val="false" name="show_cell_centers"/>
+    <setting val="false" name="show_nodes"/>
+    <setting val="false" name="show_node_numbers"/>
+    <setting val="false" name="show_cell_numbers"/>
+    <setting val="false" name="show_borders_cells"/>
+    <setting val="false" name="show_cell_axes"/>
+    <setting val="false" name="show_cell_strain"/>
+    <setting val="false" name="show_fluxes"/>
+    <setting val="false" name="show_walls"/>
+    <setting val="false" name="save_movie_frames"/>
+    <setting val="false" name="show_only_leaf_boundary"/>
+    <setting val="true" name="cell_growth"/>
+    <setting val="false" name="hide_cells"/>
+  </settings>
+</leaf>

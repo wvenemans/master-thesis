@@ -1,0 +1,1792 @@
+<!DOCTYPE leaf>
+<leaf simtime="4350" name="/home/willem/Documents/VirtualLeaf2021-2.0.0/data/leaves/Waterflux_big.xml" date="Fri Apr 25 10:12:40 2025">
+  <parameter>
+    <par val="white" name="arrowcolor"/>
+    <par val="10" name="arrowsize"/>
+    <par val="red" name="textcolor"/>
+    <par val="1" name="cellnumsize"/>
+    <par val="1" name="nodenumsize"/>
+    <par val="1" name="node_mag"/>
+    <par val="1" name="outlinewidth"/>
+    <par val="forestgreen" name="cell_outline_color"/>
+    <par val="10" name="resize_stride"/>
+    <par val="0" name="export_interval"/>
+    <par val="cell." name="export_fn_prefix"/>
+    <par val="100" name="storage_stride"/>
+    <par val="500" name="xml_storage_stride"/>
+    <par val="tutorial1_data" name="datadir"/>
+    <par val="1" name="T"/>
+    <par val="100" name="lambda_length"/>
+    <par val="4" name="yielding_threshold"/>
+    <par val="0" name="lambda_celllength"/>
+    <par val="60" name="target_length"/>
+    <par val="5" name="cell_expansion_rate"/>
+    <par val="10" name="cell_div_expansion_rate"/>
+    <par val="true" name="auxin_dependent_growth"/>
+    <par val="0.0001" name="ode_accuracy"/>
+    <par val="0.4" name="mc_stepsize"/>
+    <par val="0.2" name="mc_cell_stepsize"/>
+    <par val="1000" name="energy_threshold"/>
+    <par val="0" name="bend_lambda"/>
+    <par val="0" name="alignment_lambda"/>
+    <par val="2" name="rel_cell_div_threshold"/>
+    <par val="2" name="rel_perimeter_stiffness"/>
+    <par val="0.05" name="collapse_node_threshold"/>
+    <par val="0.2" name="morphogen_div_threshold"/>
+    <par val="0.01" name="morphogen_expansion_threshold"/>
+    <par val="true" name="copy_wall"/>
+    <par val="0" name="source"/>
+    <par name="D">
+      <valarray>
+        <val v="1e-06"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+      </valarray>
+    </par>
+    <par name="initval">
+      <valarray>
+        <val v="0"/>
+        <val v="1"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+      </valarray>
+    </par>
+    <par val="1" name="k1"/>
+    <par val="0.3" name="k2"/>
+    <par val="1" name="r"/>
+    <par val="1" name="kr"/>
+    <par val="1" name="km"/>
+    <par val="1" name="Pi_tot"/>
+    <par val="0.36" name="transport"/>
+    <par val="1" name="ka"/>
+    <par val="0" name="pin_prod"/>
+    <par val="0" name="pin_prod_in_epidermis"/>
+    <par val="0" name="pin_breakdown"/>
+    <par val="0.001" name="pin_breakdown_internal"/>
+    <par val="0.001" name="aux1prod"/>
+    <par val="0" name="aux1prodmeso"/>
+    <par val="0.001" name="aux1decay"/>
+    <par val="0.1" name="aux1decaymeso"/>
+    <par val="0.036" name="aux1transport"/>
+    <par val="0" name="aux_cons"/>
+    <par val="0.0001" name="aux_breakdown"/>
+    <par val="1" name="kaux1"/>
+    <par val="1" name="kap"/>
+    <par val="0.0001" name="leaf_tip_source"/>
+    <par val="0.0001" name="sam_efflux"/>
+    <par val="10" name="sam_auxin"/>
+    <par val="0" name="sam_auxin_breakdown"/>
+    <par val="0.002" name="van3prod"/>
+    <par val="0.1" name="van3autokat"/>
+    <par val="10" name="van3sat"/>
+    <par val="0.3" name="k2van3"/>
+    <par val="0.1" name="dt"/>
+    <par val="10" name="rd_dt"/>
+    <par val="0.174533" name="potential_slide_angle"/>
+    <par val="50" name="elastic_modulus"/>
+    <par val="true" name="movie"/>
+    <par val="100000" name="nit"/>
+    <par val="65535" name="compatibility_level"/>
+    <par val="1e+06" name="maxt"/>
+    <par val="-1" name="rseed"/>
+    <par val="16" name="constituous_expansion_limit"/>
+    <par val="1" name="vessel_inh_level"/>
+    <par val="0.25" name="vessel_expansion_rate"/>
+    <par val="0" name="d"/>
+    <par val="0" name="e"/>
+    <par val="0" name="f"/>
+    <par val="0" name="c"/>
+    <par val="0" name="mu"/>
+    <par val="0" name="nu"/>
+    <par val="0" name="rho0"/>
+    <par val="0" name="rho1"/>
+    <par val="0" name="c0"/>
+    <par val="0" name="gamma"/>
+    <par val="0" name="eps"/>
+    <par val="0" name="betaN"/>
+    <par val="0" name="gammaN"/>
+    <par val="0" name="betaD"/>
+    <par val="0" name="gammaD"/>
+    <par val="0" name="betaR"/>
+    <par val="0" name="gammaR"/>
+    <par val="1" name="tau"/>
+    <par val="0" name="kt"/>
+    <par val="0" name="kc"/>
+    <par val="0" name="krs"/>
+    <par name="k">
+      <valarray>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+      </valarray>
+    </par>
+    <par val="0" name="i1"/>
+    <par val="0" name="i2"/>
+    <par val="false" name="b4"/>
+    <par val="." name="dir1"/>
+    <par val="." name="dir2"/>
+  </parameter>
+  <nodes target_length="3.09017" n="153">
+    <node boundary="true" sam="false" y="10.1762" fixed="false" x="74.3529"/>
+    <node boundary="true" sam="false" y="21.658" fixed="false" x="71.8715"/>
+    <node boundary="true" sam="false" y="68.2513" fixed="false" x="19.1255"/>
+    <node boundary="true" sam="false" y="71.1947" fixed="false" x="-10.7968"/>
+    <node boundary="true" sam="false" y="51.6868" fixed="false" x="-38.4733"/>
+    <node boundary="true" sam="false" y="-16.8265" fixed="false" x="-68.0023"/>
+    <node boundary="true" sam="false" y="-26.2308" fixed="false" x="-68.6178"/>
+    <node boundary="true" sam="false" y="-67.6846" fixed="false" x="-13.6354"/>
+    <node boundary="true" sam="false" y="-70.1987" fixed="false" x="10.7829"/>
+    <node boundary="true" sam="false" y="-61.3465" fixed="false" x="40.6287"/>
+    <node boundary="true" sam="false" y="66.6145" fixed="false" x="8.4288"/>
+    <node boundary="true" sam="false" y="-63.8777" fixed="false" x="2.45347"/>
+    <node boundary="false" sam="false" y="17.1618" fixed="false" x="-6.40554"/>
+    <node boundary="false" sam="false" y="-23.4283" fixed="false" x="9.67805"/>
+    <node boundary="true" sam="false" y="-12.7681" fixed="false" x="69.0438"/>
+    <node boundary="true" sam="false" y="23.8225" fixed="false" x="-68.5207"/>
+    <node boundary="true" sam="false" y="-0.24338" fixed="false" x="69.3057"/>
+    <node boundary="false" sam="false" y="5.87737" fixed="false" x="-0.519262"/>
+    <node boundary="false" sam="false" y="1.60916" fixed="false" x="41.925"/>
+    <node boundary="false" sam="false" y="6.2549" fixed="false" x="13.3419"/>
+    <node boundary="true" sam="false" y="3.63249" fixed="false" x="-65.1885"/>
+    <node boundary="false" sam="false" y="-2.7423" fixed="false" x="-7.41565"/>
+    <node boundary="false" sam="false" y="2.77142" fixed="false" x="-50.0093"/>
+    <node boundary="false" sam="false" y="-0.439282" fixed="false" x="-43.7066"/>
+    <node boundary="true" sam="false" y="-61.398" fixed="false" x="-27.618"/>
+    <node boundary="true" sam="false" y="63.7666" fixed="false" x="29.1246"/>
+    <node boundary="true" sam="false" y="-62.5835" fixed="false" x="29.7775"/>
+    <node boundary="false" sam="false" y="-2.48639" fixed="false" x="26.7405"/>
+    <node boundary="false" sam="false" y="-44.1671" fixed="false" x="24.6221"/>
+    <node boundary="false" sam="false" y="-11.6936" fixed="false" x="27.9243"/>
+    <node boundary="true" sam="false" y="44.5819" fixed="false" x="-29.527"/>
+    <node boundary="false" sam="false" y="-3.70211" fixed="false" x="-32.0899"/>
+    <node boundary="false" sam="false" y="36.7251" fixed="false" x="-25.5225"/>
+    <node boundary="false" sam="false" y="18.3133" fixed="false" x="-26.6226"/>
+    <node boundary="true" sam="false" y="47.4319" fixed="false" x="42.7465"/>
+    <node boundary="false" sam="false" y="10.1877" fixed="false" x="9.4319"/>
+    <node boundary="false" sam="false" y="36.5428" fixed="false" x="38.8607"/>
+    <node boundary="false" sam="false" y="17.0495" fixed="false" x="16.9231"/>
+    <node boundary="true" sam="false" y="-54.9887" fixed="false" x="-36.8591"/>
+    <node boundary="false" sam="false" y="-10.6175" fixed="false" x="-24.3412"/>
+    <node boundary="false" sam="false" y="-44.5602" fixed="false" x="-31.7694"/>
+    <node boundary="false" sam="false" y="-21.4809" fixed="false" x="-23.6471"/>
+    <node boundary="true" sam="false" y="-43.3995" fixed="false" x="50.7778"/>
+    <node boundary="false" sam="false" y="42.869" fixed="false" x="-4.05371"/>
+    <node boundary="false" sam="false" y="-42.4695" fixed="false" x="3.73816"/>
+    <node boundary="false" sam="false" y="-32.4728" fixed="false" x="6.36431"/>
+    <node boundary="false" sam="false" y="-29.5563" fixed="false" x="25.3953"/>
+    <node boundary="false" sam="false" y="-26.6518" fixed="false" x="17.2826"/>
+    <node boundary="true" sam="false" y="-52.299" fixed="false" x="-47.4473"/>
+    <node boundary="false" sam="false" y="34.7074" fixed="false" x="-7.5872"/>
+    <node boundary="false" sam="false" y="27.5269" fixed="false" x="-23.4073"/>
+    <node boundary="false" sam="false" y="32.3684" fixed="false" x="-16.0558"/>
+    <node boundary="false" sam="false" y="54.9921" fixed="false" x="5.76135"/>
+    <node boundary="false" sam="false" y="24.9513" fixed="false" x="23.6216"/>
+    <node boundary="false" sam="false" y="47.9743" fixed="false" x="11.5766"/>
+    <node boundary="false" sam="false" y="33.6537" fixed="false" x="18.2066"/>
+    <node boundary="true" sam="false" y="13.0944" fixed="false" x="-70.1247"/>
+    <node boundary="true" sam="false" y="51.3009" fixed="false" x="-49.9192"/>
+    <node boundary="false" sam="false" y="3.19005" fixed="false" x="58.5163"/>
+    <node boundary="false" sam="false" y="26.3841" fixed="false" x="34.0186"/>
+    <node boundary="false" sam="false" y="11.6965" fixed="false" x="54.0583"/>
+    <node boundary="false" sam="false" y="24.0685" fixed="false" x="42.1563"/>
+    <node boundary="true" sam="false" y="-9.22647" fixed="false" x="-62.3115"/>
+    <node boundary="false" sam="false" y="-35.4139" fixed="false" x="-25.8551"/>
+    <node boundary="false" sam="false" y="-16.2077" fixed="false" x="-54.4251"/>
+    <node boundary="false" sam="false" y="-32.0226" fixed="false" x="-32.0665"/>
+    <node boundary="true" sam="false" y="-24.3582" fixed="false" x="49.5296"/>
+    <node boundary="false" sam="false" y="-20.8098" fixed="false" x="29.2708"/>
+    <node boundary="false" sam="false" y="-21.2457" fixed="false" x="43.1808"/>
+    <node boundary="false" sam="false" y="-20.8936" fixed="false" x="36.0126"/>
+    <node boundary="false" sam="false" y="-35.0807" fixed="false" x="-16.6921"/>
+    <node boundary="false" sam="false" y="-43.6638" fixed="false" x="-1.66148"/>
+    <node boundary="false" sam="false" y="-42.8125" fixed="false" x="-7.30974"/>
+    <node boundary="true" sam="false" y="32.1431" fixed="false" x="-61.8684"/>
+    <node boundary="false" sam="false" y="11.2544" fixed="false" x="-27.2016"/>
+    <node boundary="false" sam="false" y="27.8938" fixed="false" x="-53.4818"/>
+    <node boundary="false" sam="false" y="17.392" fixed="false" x="-33.4564"/>
+    <node boundary="true" sam="false" y="46.1129" fixed="false" x="52.7225"/>
+    <node boundary="true" sam="false" y="-68.6504" fixed="false" x="-4.79042"/>
+    <node boundary="true" sam="false" y="-54.1532" fixed="false" x="48.8728"/>
+    <node boundary="true" sam="false" y="65.6723" fixed="false" x="-19.834"/>
+    <node boundary="true" sam="false" y="71.3455" fixed="false" x="-0.640312"/>
+    <node boundary="true" sam="false" y="-68.777" fixed="false" x="21.2883"/>
+    <node boundary="true" sam="false" y="-34.8141" fixed="false" x="-64.2288"/>
+    <node boundary="true" sam="false" y="-22.0007" fixed="false" x="61.2922"/>
+    <node boundary="false" sam="false" y="-9.86313" fixed="false" x="-5.10239"/>
+    <node boundary="false" sam="false" y="47.9501" fixed="false" x="-1.67597"/>
+    <node boundary="true" sam="false" y="56.6541" fixed="false" x="-24.0277"/>
+    <node boundary="false" sam="false" y="51.2224" fixed="false" x="-8.81851"/>
+    <node boundary="false" sam="false" y="54.2382" fixed="false" x="-16.3532"/>
+    <node boundary="false" sam="false" y="-0.824014" fixed="false" x="50.2335"/>
+    <node boundary="false" sam="false" y="-8.02088" fixed="false" x="49.3621"/>
+    <node boundary="false" sam="false" y="-14.959" fixed="false" x="46.9239"/>
+    <node boundary="true" sam="false" y="39.5699" fixed="false" x="60.532"/>
+    <node boundary="true" sam="false" y="54.2297" fixed="false" x="34.512"/>
+    <node boundary="false" sam="false" y="40.5408" fixed="false" x="16.0988"/>
+    <node boundary="false" sam="false" y="49.5913" fixed="false" x="27.7425"/>
+    <node boundary="false" sam="false" y="44.8242" fixed="false" x="21.9844"/>
+    <node boundary="true" sam="false" y="30.3596" fixed="false" x="64.1037"/>
+    <node boundary="false" sam="false" y="20.3315" fixed="false" x="50.1147"/>
+    <node boundary="false" sam="false" y="26.2699" fixed="false" x="56.2796"/>
+    <node boundary="true" sam="false" y="-39.2499" fixed="false" x="-56.03"/>
+    <node boundary="false" sam="false" y="-28.2307" fixed="false" x="-38.13"/>
+    <node boundary="false" sam="false" y="-34.3922" fixed="false" x="-50.4777"/>
+    <node boundary="false" sam="false" y="-30.3788" fixed="false" x="-44.2852"/>
+    <node boundary="false" sam="false" y="6.38316" fixed="false" x="-56.4259"/>
+    <node boundary="false" sam="false" y="18.7562" fixed="false" x="-40.4948"/>
+    <node boundary="false" sam="false" y="12.0125" fixed="false" x="-52.0874"/>
+    <node boundary="false" sam="false" y="16.2522" fixed="false" x="-46.7867"/>
+    <node boundary="true" sam="false" y="-31.9634" fixed="false" x="52.5646"/>
+    <node boundary="false" sam="false" y="-0.172222" fixed="false" x="18.5359"/>
+    <node boundary="false" sam="false" y="-17.5155" fixed="false" x="5.61551"/>
+    <node boundary="false" sam="false" y="-6.02821" fixed="false" x="14.1928"/>
+    <node boundary="false" sam="false" y="-11.688" fixed="false" x="9.76795"/>
+    <node boundary="false" sam="false" y="3.30703" fixed="false" x="33.6692"/>
+    <node boundary="false" sam="false" y="10.9785" fixed="false" x="33.4835"/>
+    <node boundary="false" sam="false" y="18.569" fixed="false" x="33.48"/>
+    <node boundary="false" sam="false" y="-3.99289" fixed="false" x="-37.9093"/>
+    <node boundary="false" sam="false" y="-20.9178" fixed="false" x="-44.8714"/>
+    <node boundary="false" sam="false" y="-9.80685" fixed="false" x="-39.5684"/>
+    <node boundary="false" sam="false" y="-15.3645" fixed="false" x="-41.6363"/>
+    <node boundary="false" sam="false" y="-34.3154" fixed="false" x="27.4096"/>
+    <node boundary="false" sam="false" y="-38.5592" fixed="false" x="33.9882"/>
+    <node boundary="false" sam="false" y="-41.4485" fixed="false" x="41.764"/>
+    <node boundary="true" sam="false" y="-63.0161" fixed="false" x="-19.8035"/>
+    <node boundary="false" sam="false" y="-40.0975" fixed="false" x="-12.4972"/>
+    <node boundary="false" sam="false" y="-55.5932" fixed="false" x="-16.1714"/>
+    <node boundary="false" sam="false" y="-47.8242" fixed="false" x="-13.7724"/>
+    <node boundary="false" sam="false" y="-52.6874" fixed="false" x="4.39673"/>
+    <node boundary="false" sam="false" y="-50.3851" fixed="false" x="11.4183"/>
+    <node boundary="false" sam="false" y="-47.4834" fixed="false" x="17.9612"/>
+    <node boundary="false" sam="false" y="-16.9355" fixed="false" x="-2.28698"/>
+    <node boundary="false" sam="false" y="-32.4432" fixed="false" x="-21.523"/>
+    <node boundary="false" sam="false" y="-22.9582" fixed="false" x="-7.01734"/>
+    <node boundary="false" sam="false" y="-28.9147" fixed="false" x="-11.7085"/>
+    <node boundary="false" sam="false" y="6.14952" fixed="false" x="-27.5712"/>
+    <node boundary="false" sam="false" y="11.2509" fixed="false" x="-3.82314"/>
+    <node boundary="false" sam="false" y="8.5514" fixed="false" x="-20.0588"/>
+    <node boundary="false" sam="false" y="12.1588" fixed="false" x="-12.7428"/>
+    <node boundary="false" sam="false" y="26.46" fixed="false" x="-46.1153"/>
+    <node boundary="false" sam="false" y="40.5127" fixed="false" x="-37.0496"/>
+    <node boundary="false" sam="false" y="34.3734" fixed="false" x="-42.8038"/>
+    <node boundary="false" sam="false" y="26.7346" fixed="false" x="-3.00682"/>
+    <node boundary="false" sam="false" y="28.8947" fixed="false" x="19.6113"/>
+    <node boundary="false" sam="false" y="28.5653" fixed="false" x="4.42208"/>
+    <node boundary="false" sam="false" y="29.223" fixed="false" x="11.9899"/>
+    <node boundary="false" sam="false" y="-51.7896" fixed="false" x="26.4662"/>
+    <node boundary="true" sam="false" y="43.4301" fixed="false" x="-58.2155"/>
+    <node boundary="false" sam="false" y="-6.46149" fixed="false" x="-15.954"/>
+    <node boundary="true" sam="false" y="-45.6778" fixed="false" x="-52.6842"/>
+    <node boundary="true" sam="false" y="50.6796" fixed="false" x="-27.7205"/>
+    <node boundary="true" sam="false" y="-3.31142" fixed="false" x="-64.3792"/>
+    <node boundary="true" sam="false" y="-6.72006" fixed="false" x="69.3558"/>
+  </nodes>
+  <cells base_area="293.893" nchem="1" magnfication="1" offsety="0" offsetx="0" n="32">
+    <cell index="0" area="444.707" nofn_pressure="8505.4" target_area="581.997" centroid_y="-15.3177" centroid_x="19.1528" source="false" nofn_average_pressure="325.551" neighbour_number="6" pin_fixed="false" fixed="false" pressure="274.578" at_boundary="false" div_counter="5" target_length="60" cell_type="0" dead="false" total_neighbor_pressure="1583.1" lambda_celllength="0" average_neighbor_pressure="263.851" total_neighbour_area="2692.62" boundary="0">
+      <node base_length="7.10898" stiffness="1" n="13"/>
+      <node base_length="7.21261" stiffness="nan" n="47"/>
+      <node base_length="8.97708" stiffness="1" n="46"/>
+      <node base_length="7.80045" stiffness="nan" n="67"/>
+      <node base_length="8.30333" stiffness="nan" n="29"/>
+      <node base_length="7.16431" stiffness="1" n="27"/>
+      <node base_length="6.41588" stiffness="nan" n="110"/>
+      <node base_length="6.41588" stiffness="nan" n="112"/>
+      <node base_length="6.41588" stiffness="nan" n="113"/>
+      <node base_length="6.10663" stiffness="1" n="111"/>
+      <wall w="21"/>
+      <wall w="11"/>
+      <wall w="0"/>
+      <wall w="8"/>
+      <wall w="42"/>
+      <wall w="43"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="1" area="431.886" nofn_pressure="8044.31" target_area="575.434" centroid_y="20.97" centroid_x="-15.8239" source="false" nofn_average_pressure="303.72" neighbour_number="6" pin_fixed="false" fixed="false" pressure="287.097" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1511.71" lambda_celllength="0" average_neighbor_pressure="251.951" total_neighbour_area="2707.38" boundary="0">
+      <node base_length="9.36377" stiffness="1" n="12"/>
+      <node base_length="7.70441" stiffness="nan" n="142"/>
+      <node base_length="7.3849" stiffness="nan" n="49"/>
+      <node base_length="7.4117" stiffness="nan" n="51"/>
+      <node base_length="8.19093" stiffness="1" n="50"/>
+      <node base_length="5.95879" stiffness="1" n="33"/>
+      <node base_length="4.26518" stiffness="1" n="74"/>
+      <node base_length="6.74706" stiffness="nan" n="135"/>
+      <node base_length="6.79752" stiffness="nan" n="137"/>
+      <node base_length="6.73044" stiffness="nan" n="138"/>
+      <wall w="2"/>
+      <wall w="13"/>
+      <wall w="74"/>
+      <wall w="90"/>
+      <wall w="75"/>
+      <wall w="83"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="2" area="458.953" nofn_pressure="8073.71" target_area="576.997" centroid_y="11.5718" centroid_x="24.2983" source="false" nofn_average_pressure="237.324" neighbour_number="6" pin_fixed="false" fixed="false" pressure="236.088" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1554.47" lambda_celllength="0" average_neighbor_pressure="259.078" total_neighbour_area="2709.74" boundary="0">
+      <node base_length="8.79889" stiffness="1" n="53"/>
+      <node base_length="8.50792" stiffness="nan" n="37"/>
+      <node base_length="5.04845" stiffness="1" n="35"/>
+      <node base_length="7.81343" stiffness="1" n="19"/>
+      <node base_length="7.16431" stiffness="nan" n="110"/>
+      <node base_length="7.68471" stiffness="1" n="27"/>
+      <node base_length="7.29869" stiffness="nan" n="114"/>
+      <node base_length="7.29869" stiffness="nan" n="115"/>
+      <node base_length="7.29869" stiffness="nan" n="116"/>
+      <node base_length="9.14555" stiffness="1" n="59"/>
+      <wall w="22"/>
+      <wall w="44"/>
+      <wall w="87"/>
+      <wall w="5"/>
+      <wall w="42"/>
+      <wall w="46"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="3" area="462.316" nofn_pressure="9345.91" target_area="576.684" centroid_y="-19.3751" centroid_x="-32.1646" source="false" nofn_average_pressure="207.524" neighbour_number="8" pin_fixed="false" fixed="false" pressure="228.737" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1876.27" lambda_celllength="0" average_neighbor_pressure="234.534" total_neighbour_area="3680.34" boundary="0">
+      <node base_length="6.09039" stiffness="1" n="102"/>
+      <node base_length="8.65713" stiffness="nan" n="65"/>
+      <node base_length="9.08726" stiffness="1" n="63"/>
+      <node base_length="9.45109" stiffness="nan" n="132"/>
+      <node base_length="9.23729" stiffness="nan" n="41"/>
+      <node base_length="9.3722" stiffness="1" n="39"/>
+      <node base_length="4.99" stiffness="1" n="31"/>
+      <node base_length="6.06904" stiffness="nan" n="117"/>
+      <node base_length="6.28611" stiffness="nan" n="119"/>
+      <node base_length="6.00435" stiffness="nan" n="120"/>
+      <node base_length="8.63647" stiffness="1" n="118"/>
+      <wall w="41"/>
+      <wall w="79"/>
+      <wall w="71"/>
+      <wall w="35"/>
+      <wall w="33"/>
+      <wall w="72"/>
+      <wall w="51"/>
+      <wall w="91"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="4" area="445.39" nofn_pressure="6009.41" target_area="579.497" centroid_y="-31.1079" centroid_x="39.8221" source="false" nofn_average_pressure="288.056" neighbour_number="5" pin_fixed="false" fixed="false" pressure="268.214" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1225.69" lambda_celllength="0" average_neighbor_pressure="245.138" total_neighbour_area="2304.64" boundary="0">
+      <node base_length="6.9142" stiffness="1" n="109"/>
+      <node base_length="6.09127" stiffness="1" n="66"/>
+      <node base_length="6.05107" stiffness="1" n="68"/>
+      <node base_length="6.80671" stiffness="nan" n="69"/>
+      <node base_length="8.97708" stiffness="1" n="67"/>
+      <node base_length="4.20061" stiffness="1" n="46"/>
+      <node base_length="7.0807" stiffness="1" n="121"/>
+      <node base_length="7.42917" stiffness="nan" n="122"/>
+      <node base_length="7.90432" stiffness="nan" n="123"/>
+      <node base_length="9.64573" stiffness="1" n="42"/>
+      <wall w="1"/>
+      <wall w="7"/>
+      <wall w="8"/>
+      <wall w="20"/>
+      <wall w="18"/>
+      <wall w="56"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="5" area="417.018" nofn_pressure="5531.65" target_area="572.934" centroid_y="29.4235" centroid_x="-33.859" source="false" nofn_average_pressure="293.816" neighbour_number="5" pin_fixed="false" fixed="false" pressure="311.831" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1147.34" lambda_celllength="0" average_neighbor_pressure="229.468" total_neighbour_area="2316" boundary="0">
+      <node base_length="5.97447" stiffness="1" n="106"/>
+      <node base_length="7.60282" stiffness="nan" n="76"/>
+      <node base_length="8.19093" stiffness="1" n="33"/>
+      <node base_length="8.37122" stiffness="1" n="50"/>
+      <node base_length="8.0593" stiffness="1" n="32"/>
+      <node base_length="7.28014" stiffness="1" n="30"/>
+      <node base_length="7.31576" stiffness="nan" n="140"/>
+      <node base_length="7.33608" stiffness="nan" n="141"/>
+      <node base_length="8.02279" stiffness="1" n="139"/>
+      <wall w="4"/>
+      <wall w="13"/>
+      <wall w="40"/>
+      <wall w="38"/>
+      <wall w="80"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="6" area="480.549" nofn_pressure="5635.98" target_area="583.247" centroid_y="38.8754" centroid_x="29.5714" source="false" nofn_average_pressure="202.684" neighbour_number="5" pin_fixed="false" fixed="false" pressure="205.394" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1093.46" lambda_celllength="0" average_neighbor_pressure="218.692" total_neighbour_area="2344.5" boundary="0">
+      <node base_length="4.30425" stiffness="1" n="55"/>
+      <node base_length="4.83496" stiffness="1" n="143"/>
+      <node base_length="9.14555" stiffness="1" n="53"/>
+      <node base_length="9.53809" stiffness="nan" n="59"/>
+      <node base_length="9.70682" stiffness="nan" n="36"/>
+      <node base_length="9.06427" stiffness="1" n="34"/>
+      <node base_length="6.92718" stiffness="nan" n="94"/>
+      <node base_length="6.49334" stiffness="nan" n="96"/>
+      <node base_length="6.1954" stiffness="nan" n="97"/>
+      <node base_length="6.05468" stiffness="1" n="95"/>
+      <wall w="5"/>
+      <wall w="86"/>
+      <wall w="31"/>
+      <wall w="23"/>
+      <wall w="24"/>
+      <wall w="84"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="7" area="461.799" nofn_pressure="6468.86" target_area="576.684" centroid_y="-48.3618" centroid_x="-23.4784" source="false" nofn_average_pressure="232.353" neighbour_number="5" pin_fixed="false" fixed="false" pressure="229.771" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1148.95" lambda_celllength="0" average_neighbor_pressure="229.79" total_neighbour_area="2311.45" boundary="0">
+      <node base_length="4.58174" stiffness="1" n="70"/>
+      <node base_length="4.4081" stiffness="1" n="132"/>
+      <node base_length="9.27401" stiffness="1" n="63"/>
+      <node base_length="10.0565" stiffness="nan" n="40"/>
+      <node base_length="9.83197" stiffness="1" n="38"/>
+      <node base_length="6.92893" stiffness="1" n="24"/>
+      <node base_length="7.39091" stiffness="nan" n="124"/>
+      <node base_length="6.91121" stiffness="nan" n="126"/>
+      <node base_length="6.60934" stiffness="nan" n="127"/>
+      <node base_length="5.52154" stiffness="1" n="125"/>
+      <wall w="37"/>
+      <wall w="70"/>
+      <wall w="59"/>
+      <wall w="60"/>
+      <wall w="68"/>
+      <wall w="91"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="8" area="454.221" nofn_pressure="6691.62" target_area="581.997" centroid_y="-38.046" centroid_x="14.5506" source="false" nofn_average_pressure="258.976" neighbour_number="6" pin_fixed="false" fixed="false" pressure="255.551" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1431.2" lambda_celllength="0" average_neighbor_pressure="238.533" total_neighbour_area="2760.76" boundary="0">
+      <node base_length="4.20061" stiffness="nan" n="121"/>
+      <node base_length="7.21261" stiffness="1" n="46"/>
+      <node base_length="7.10898" stiffness="nan" n="47"/>
+      <node base_length="8.09948" stiffness="1" n="13"/>
+      <node base_length="8.687" stiffness="1" n="45"/>
+      <node base_length="8.67208" stiffness="1" n="44"/>
+      <node base_length="6.55059" stiffness="nan" n="128"/>
+      <node base_length="6.55059" stiffness="nan" n="129"/>
+      <node base_length="6.62799" stiffness="nan" n="130"/>
+      <node base_length="8.75255" stiffness="1" n="28"/>
+      <wall w="0"/>
+      <wall w="1"/>
+      <wall w="12"/>
+      <wall w="57"/>
+      <wall w="63"/>
+      <wall w="64"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="9" area="481.266" nofn_pressure="4613.2" target_area="585.434" centroid_y="43.2759" centroid_x="-16.9412" source="false" nofn_average_pressure="287.828" neighbour_number="4" pin_fixed="false" fixed="false" pressure="208.336" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="990.039" lambda_celllength="0" average_neighbor_pressure="247.51" total_neighbour_area="1814.53" boundary="0">
+      <node base_length="7.53019" stiffness="1" n="30"/>
+      <node base_length="8.37122" stiffness="1" n="32"/>
+      <node base_length="7.4117" stiffness="nan" n="50"/>
+      <node base_length="7.3849" stiffness="nan" n="51"/>
+      <node base_length="7.96909" stiffness="1" n="49"/>
+      <node base_length="4.82104" stiffness="1" n="43"/>
+      <node base_length="6.71408" stiffness="nan" n="86"/>
+      <node base_length="7.13952" stiffness="nan" n="88"/>
+      <node base_length="7.50256" stiffness="nan" n="89"/>
+      <node base_length="5.84594" stiffness="1" n="87"/>
+      <node base_length="5.35458" stiffness="1" n="150"/>
+      <wall w="2"/>
+      <wall w="3"/>
+      <wall w="6"/>
+      <wall w="4"/>
+      <wall w="15"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="10" area="463.233" nofn_pressure="6304.47" target_area="575.747" centroid_y="38.638" centroid_x="5.46061" source="false" nofn_average_pressure="202.625" neighbour_number="6" pin_fixed="false" fixed="false" pressure="225.027" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1329.09" lambda_celllength="0" average_neighbor_pressure="221.515" total_neighbour_area="2824" boundary="0">
+      <node base_length="6.05468" stiffness="1" n="55"/>
+      <node base_length="7.50355" stiffness="1" n="95"/>
+      <node base_length="7.49976" stiffness="nan" n="54"/>
+      <node base_length="8.52189" stiffness="1" n="52"/>
+      <node base_length="4.82104" stiffness="1" n="86"/>
+      <node base_length="7.96909" stiffness="nan" n="43"/>
+      <node base_length="7.70441" stiffness="1" n="49"/>
+      <node base_length="6.42254" stiffness="nan" n="142"/>
+      <node base_length="6.47505" stiffness="nan" n="144"/>
+      <node base_length="6.46648" stiffness="nan" n="145"/>
+      <node base_length="4.30425" stiffness="1" n="143"/>
+      <wall w="6"/>
+      <wall w="16"/>
+      <wall w="27"/>
+      <wall w="83"/>
+      <wall w="84"/>
+      <wall w="85"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="11" area="469.416" nofn_pressure="2793.79" target_area="579.497" centroid_y="15.0129" centroid_x="63.1691" source="false" nofn_average_pressure="186.253" neighbour_number="3" pin_fixed="false" fixed="false" pressure="220.162" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="624.604" lambda_celllength="0" average_neighbor_pressure="208.201" total_neighbour_area="1431.19" boundary="0">
+      <node base_length="8.0679" stiffness="nan" n="60"/>
+      <node base_length="9.90946" stiffness="1" n="58"/>
+      <node base_length="10.1465" stiffness="nan" n="16"/>
+      <node base_length="10.1303" stiffness="nan" n="0"/>
+      <node base_length="9.74269" stiffness="1" n="1"/>
+      <node base_length="8.01417" stiffness="nan" n="98"/>
+      <node base_length="7.67359" stiffness="nan" n="100"/>
+      <node base_length="8.11223" stiffness="1" n="99"/>
+      <wall w="10"/>
+      <wall w="28"/>
+      <wall w="49"/>
+      <wall w="29"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="12" area="492.263" nofn_pressure="3342.86" target_area="579.184" centroid_y="-25.09" centroid_x="-56.4335" source="false" nofn_average_pressure="259.934" neighbour_number="3" pin_fixed="false" fixed="false" pressure="173.841" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="673.766" lambda_celllength="0" average_neighbor_pressure="224.589" total_neighbour_area="1395.67" boundary="0">
+      <node base_length="8.94037" stiffness="nan" n="118"/>
+      <node base_length="9.00725" stiffness="nan" n="64"/>
+      <node base_length="9.04856" stiffness="1" n="62"/>
+      <node base_length="9.54551" stiffness="nan" n="5"/>
+      <node base_length="8.54158" stiffness="nan" n="6"/>
+      <node base_length="8.35794" stiffness="1" n="83"/>
+      <node base_length="7.16469" stiffness="nan" n="101"/>
+      <node base_length="6.19539" stiffness="nan" n="103"/>
+      <node base_length="6.10201" stiffness="nan" n="104"/>
+      <node base_length="8.63647" stiffness="1" n="102"/>
+      <wall w="32"/>
+      <wall w="33"/>
+      <wall w="34"/>
+      <wall w="55"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="13" area="481.107" nofn_pressure="4199.98" target_area="586.997" centroid_y="-10.8196" centroid_x="57.5587" source="false" nofn_average_pressure="271.675" neighbour_number="4" pin_fixed="false" fixed="false" pressure="211.78" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1009.21" lambda_celllength="0" average_neighbor_pressure="252.302" total_neighbour_area="1818.38" boundary="0">
+      <node base_length="10.193" stiffness="1" n="66"/>
+      <node base_length="10.2425" stiffness="nan" n="84"/>
+      <node base_length="5.18834" stiffness="nan" n="14"/>
+      <node base_length="5.2531" stiffness="nan" n="152"/>
+      <node base_length="9.63839" stiffness="nan" n="16"/>
+      <node base_length="7.67017" stiffness="1" n="58"/>
+      <node base_length="6.60651" stiffness="nan" n="90"/>
+      <node base_length="6.60256" stiffness="nan" n="91"/>
+      <node base_length="6.50884" stiffness="nan" n="92"/>
+      <node base_length="6.17151" stiffness="1" n="68"/>
+      <wall w="9"/>
+      <wall w="10"/>
+      <wall w="48"/>
+      <wall w="18"/>
+      <wall w="19"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="14" area="445.735" nofn_pressure="8182.28" target_area="576.684" centroid_y="-30.8549" centroid_x="-2.33862" source="false" nofn_average_pressure="259.062" neighbour_number="6" pin_fixed="false" fixed="false" pressure="261.899" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1500.97" lambda_celllength="0" average_neighbor_pressure="250.161" total_neighbour_area="2725.56" boundary="0">
+      <node base_length="5.52154" stiffness="1" n="70"/>
+      <node base_length="4.9046" stiffness="1" n="125"/>
+      <node base_length="6.28924" stiffness="nan" n="72"/>
+      <node base_length="6.31879" stiffness="nan" n="71"/>
+      <node base_length="8.687" stiffness="1" n="44"/>
+      <node base_length="8.10437" stiffness="nan" n="45"/>
+      <node base_length="7.08363" stiffness="nan" n="13"/>
+      <node base_length="6.60312" stiffness="nan" n="111"/>
+      <node base_length="7.54957" stiffness="1" n="131"/>
+      <node base_length="7.54957" stiffness="nan" n="133"/>
+      <node base_length="7.62063" stiffness="nan" n="134"/>
+      <wall w="11"/>
+      <wall w="12"/>
+      <wall w="45"/>
+      <wall w="62"/>
+      <wall w="68"/>
+      <wall w="69"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="15" area="484.661" nofn_pressure="3989.68" target_area="577.934" centroid_y="18.2995" centroid_x="-57.9547" source="false" nofn_average_pressure="306.991" neighbour_number="4" pin_fixed="false" fixed="false" pressure="186.545" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1021.8" lambda_celllength="0" average_neighbor_pressure="255.449" total_neighbour_area="1789.59" boundary="0">
+      <node base_length="6.55253" stiffness="nan" n="139"/>
+      <node base_length="8.77529" stiffness="nan" n="75"/>
+      <node base_length="9.28632" stiffness="1" n="73"/>
+      <node base_length="9.3561" stiffness="nan" n="15"/>
+      <node base_length="9.04412" stiffness="nan" n="56"/>
+      <node base_length="8.41517" stiffness="1" n="20"/>
+      <node base_length="6.18525" stiffness="nan" n="105"/>
+      <node base_length="5.89236" stiffness="nan" n="107"/>
+      <node base_length="5.80236" stiffness="nan" n="108"/>
+      <node base_length="8.02279" stiffness="1" n="106"/>
+      <wall w="14"/>
+      <wall w="53"/>
+      <wall w="38"/>
+      <wall w="39"/>
+      <wall w="82"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="16" area="502.392" nofn_pressure="2915.64" target_area="585.434" centroid_y="60.7831" centroid_x="-6.49345" source="false" nofn_average_pressure="216.982" neighbour_number="3" pin_fixed="false" fixed="false" pressure="166.084" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="625.057" lambda_celllength="0" average_neighbor_pressure="208.352" total_neighbour_area="1431.9" boundary="0">
+      <node base_length="10.1524" stiffness="nan" n="52"/>
+      <node base_length="8.55507" stiffness="nan" n="10"/>
+      <node base_length="8.82726" stiffness="nan" n="81"/>
+      <node base_length="9.11647" stiffness="nan" n="3"/>
+      <node base_length="8.88978" stiffness="1" n="80"/>
+      <node base_length="7.50256" stiffness="nan" n="87"/>
+      <node base_length="7.13952" stiffness="nan" n="89"/>
+      <node base_length="6.71408" stiffness="nan" n="88"/>
+      <node base_length="8.52189" stiffness="1" n="86"/>
+      <wall w="15"/>
+      <wall w="26"/>
+      <wall w="16"/>
+      <wall w="17"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="17" area="447.91" nofn_pressure="6488.84" target_area="586.997" centroid_y="-8.99728" centroid_x="37.9838" source="false" nofn_average_pressure="281.685" neighbour_number="5" pin_fixed="false" fixed="false" pressure="278.173" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1233.32" lambda_celllength="0" average_neighbor_pressure="246.663" total_neighbour_area="2285.82" boundary="0">
+      <node base_length="8.62018" stiffness="nan" n="18"/>
+      <node base_length="7.68471" stiffness="nan" n="114"/>
+      <node base_length="7.82677" stiffness="nan" n="27"/>
+      <node base_length="7.80045" stiffness="nan" n="29"/>
+      <node base_length="6.16191" stiffness="nan" n="67"/>
+      <node base_length="6.05107" stiffness="1" n="69"/>
+      <node base_length="6.50884" stiffness="nan" n="68"/>
+      <node base_length="6.60256" stiffness="nan" n="92"/>
+      <node base_length="6.60651" stiffness="nan" n="91"/>
+      <node base_length="7.47936" stiffness="1" n="90"/>
+      <wall w="19"/>
+      <wall w="20"/>
+      <wall w="21"/>
+      <wall w="22"/>
+      <wall w="50"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="18" area="487.4" nofn_pressure="3047.61" target_area="583.247" centroid_y="56.1834" centroid_x="18.9391" source="false" nofn_average_pressure="169.312" neighbour_number="3" pin_fixed="false" fixed="false" pressure="191.694" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="596.505" lambda_celllength="0" average_neighbor_pressure="198.835" total_neighbour_area="1446.17" boundary="0">
+      <node base_length="9.40622" stiffness="nan" n="25"/>
+      <node base_length="9.32707" stiffness="nan" n="2"/>
+      <node base_length="10.1524" stiffness="nan" n="10"/>
+      <node base_length="7.49976" stiffness="nan" n="52"/>
+      <node base_length="7.50355" stiffness="1" n="54"/>
+      <node base_length="6.1954" stiffness="nan" n="95"/>
+      <node base_length="6.49334" stiffness="nan" n="97"/>
+      <node base_length="6.92718" stiffness="nan" n="96"/>
+      <node base_length="9.24465" stiffness="1" n="94"/>
+      <wall w="24"/>
+      <wall w="25"/>
+      <wall w="26"/>
+      <wall w="27"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="19" area="494.413" nofn_pressure="2834.43" target_area="579.497" centroid_y="33.9189" centroid_x="49.0204" source="false" nofn_average_pressure="204.573" neighbour_number="3" pin_fixed="false" fixed="false" pressure="170.166" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="668.214" lambda_celllength="0" average_neighbor_pressure="222.738" total_neighbour_area="1405.63" boundary="0">
+      <node base_length="8.7831" stiffness="nan" n="93"/>
+      <node base_length="8.57192" stiffness="nan" n="77"/>
+      <node base_length="9.70682" stiffness="nan" n="34"/>
+      <node base_length="9.53809" stiffness="nan" n="36"/>
+      <node base_length="7.58997" stiffness="nan" n="59"/>
+      <node base_length="7.45627" stiffness="1" n="61"/>
+      <node base_length="7.67359" stiffness="nan" n="99"/>
+      <node base_length="8.01417" stiffness="nan" n="100"/>
+      <node base_length="8.72314" stiffness="1" n="98"/>
+      <wall w="29"/>
+      <wall w="47"/>
+      <wall w="30"/>
+      <wall w="31"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="20" area="478.971" nofn_pressure="3698.98" target_area="579.184" centroid_y="-41.0803" centroid_x="-41.1522" source="false" nofn_average_pressure="229.105" neighbour_number="3" pin_fixed="false" fixed="false" pressure="200.426" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="632.349" lambda_celllength="0" average_neighbor_pressure="210.783" total_neighbour_area="1416.38" boundary="0">
+      <node base_length="9.75177" stiffness="nan" n="48"/>
+      <node base_length="10.0565" stiffness="nan" n="38"/>
+      <node base_length="9.27401" stiffness="nan" n="40"/>
+      <node base_length="8.37927" stiffness="nan" n="63"/>
+      <node base_length="6.09039" stiffness="1" n="65"/>
+      <node base_length="5.87844" stiffness="1" n="102"/>
+      <node base_length="6.19539" stiffness="nan" n="104"/>
+      <node base_length="7.16469" stiffness="nan" n="103"/>
+      <node base_length="6.04028" stiffness="1" n="101"/>
+      <node base_length="6.90542" stiffness="nan" n="149"/>
+      <wall w="34"/>
+      <wall w="35"/>
+      <wall w="36"/>
+      <wall w="37"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="21" area="455.377" nofn_pressure="7971.77" target_area="577.934" centroid_y="8.10084" centroid_x="-39.3531" source="false" nofn_average_pressure="364.568" neighbour_number="6" pin_fixed="false" fixed="false" pressure="245.115" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1509.72" lambda_celllength="0" average_neighbor_pressure="251.621" total_neighbour_area="2700.24" boundary="0">
+      <node base_length="7.7313" stiffness="nan" n="22"/>
+      <node base_length="7.55669" stiffness="nan" n="23"/>
+      <node base_length="4.99" stiffness="nan" n="117"/>
+      <node base_length="9.07868" stiffness="1" n="31"/>
+      <node base_length="4.26518" stiffness="1" n="135"/>
+      <node base_length="5.95879" stiffness="nan" n="74"/>
+      <node base_length="7.47284" stiffness="nan" n="33"/>
+      <node base_length="5.97447" stiffness="1" n="76"/>
+      <node base_length="5.80236" stiffness="1" n="106"/>
+      <node base_length="5.89236" stiffness="nan" n="108"/>
+      <node base_length="6.18525" stiffness="nan" n="107"/>
+      <node base_length="6.28105" stiffness="1" n="105"/>
+      <wall w="39"/>
+      <wall w="40"/>
+      <wall w="78"/>
+      <wall w="41"/>
+      <wall w="54"/>
+      <wall w="74"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="22" area="440.407" nofn_pressure="9189.89" target_area="581.997" centroid_y="-3.65778" centroid_x="4.80841" source="false" nofn_average_pressure="252.936" neighbour_number="6" pin_fixed="false" fixed="false" pressure="283.179" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1559.76" lambda_celllength="0" average_neighbor_pressure="259.961" total_neighbour_area="2683.66" boundary="0">
+      <node base_length="4.85012" stiffness="nan" n="19"/>
+      <node base_length="9.23697" stiffness="nan" n="35"/>
+      <node base_length="9.71383" stiffness="nan" n="17"/>
+      <node base_length="7.51154" stiffness="nan" n="21"/>
+      <node base_length="6.39188" stiffness="1" n="85"/>
+      <node base_length="6.60312" stiffness="nan" n="131"/>
+      <node base_length="6.41588" stiffness="nan" n="111"/>
+      <node base_length="6.41588" stiffness="nan" n="113"/>
+      <node base_length="6.41588" stiffness="nan" n="112"/>
+      <node base_length="6.994" stiffness="1" n="110"/>
+      <wall w="43"/>
+      <wall w="88"/>
+      <wall w="76"/>
+      <wall w="44"/>
+      <wall w="45"/>
+      <wall w="73"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="23" area="455.668" nofn_pressure="5089.81" target_area="576.997" centroid_y="11.639" centroid_x="43.8525" source="false" nofn_average_pressure="220.249" neighbour_number="5" pin_fixed="false" fixed="false" pressure="242.658" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1116.37" lambda_celllength="0" average_neighbor_pressure="223.274" total_neighbour_area="2351.8" boundary="0">
+      <node base_length="7.47936" stiffness="nan" n="18"/>
+      <node base_length="7.67017" stiffness="nan" n="90"/>
+      <node base_length="8.0679" stiffness="nan" n="58"/>
+      <node base_length="8.11223" stiffness="nan" n="60"/>
+      <node base_length="7.45627" stiffness="nan" n="99"/>
+      <node base_length="7.16082" stiffness="1" n="61"/>
+      <node base_length="7.29869" stiffness="nan" n="59"/>
+      <node base_length="7.29869" stiffness="nan" n="116"/>
+      <node base_length="7.29869" stiffness="nan" n="115"/>
+      <node base_length="7.27172" stiffness="1" n="114"/>
+      <wall w="46"/>
+      <wall w="47"/>
+      <wall w="48"/>
+      <wall w="49"/>
+      <wall w="50"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="24" area="454.383" nofn_pressure="5081.56" target_area="576.684" centroid_y="-6.36238" centroid_x="-51.7415" source="false" nofn_average_pressure="326.554" neighbour_number="4" pin_fixed="false" fixed="false" pressure="244.603" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="834.238" lambda_celllength="0" average_neighbor_pressure="208.56" total_neighbour_area="1894.62" boundary="0">
+      <node base_length="6.82698" stiffness="nan" n="23"/>
+      <node base_length="6.28105" stiffness="nan" n="22"/>
+      <node base_length="8.41517" stiffness="nan" n="105"/>
+      <node base_length="5.78912" stiffness="nan" n="20"/>
+      <node base_length="5.31949" stiffness="nan" n="151"/>
+      <node base_length="8.92327" stiffness="nan" n="62"/>
+      <node base_length="8.94037" stiffness="1" n="64"/>
+      <node base_length="6.00435" stiffness="nan" n="118"/>
+      <node base_length="6.28611" stiffness="nan" n="120"/>
+      <node base_length="6.06904" stiffness="nan" n="119"/>
+      <node base_length="5.84081" stiffness="1" n="117"/>
+      <wall w="51"/>
+      <wall w="52"/>
+      <wall w="53"/>
+      <wall w="54"/>
+      <wall w="55"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="25" area="476.693" nofn_pressure="3310.13" target_area="579.497" centroid_y="-49.4322" centroid_x="36.5641" source="false" nofn_average_pressure="367.792" neighbour_number="3" pin_fixed="false" fixed="false" pressure="205.607" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="752.58" lambda_celllength="0" average_neighbor_pressure="250.86" total_neighbour_area="1367.2" boundary="0">
+      <node base_length="6.97808" stiffness="nan" n="28"/>
+      <node base_length="9.76005" stiffness="nan" n="146"/>
+      <node base_length="8.99683" stiffness="nan" n="26"/>
+      <node base_length="9.40912" stiffness="nan" n="9"/>
+      <node base_length="9.3454" stiffness="1" n="79"/>
+      <node base_length="7.90432" stiffness="nan" n="42"/>
+      <node base_length="7.42917" stiffness="nan" n="123"/>
+      <node base_length="7.0807" stiffness="nan" n="122"/>
+      <node base_length="8.75255" stiffness="1" n="121"/>
+      <wall w="56"/>
+      <wall w="57"/>
+      <wall w="58"/>
+      <wall w="67"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="26" area="480.642" nofn_pressure="4734.35" target_area="576.684" centroid_y="-55.3623" centroid_x="-6.53089" source="false" nofn_average_pressure="272.148" neighbour_number="4" pin_fixed="false" fixed="false" pressure="192.084" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="976.036" lambda_celllength="0" average_neighbor_pressure="244.009" total_neighbour_area="1829.34" boundary="0">
+      <node base_length="8.16128" stiffness="nan" n="7"/>
+      <node base_length="7.98263" stiffness="nan" n="78"/>
+      <node base_length="9.99839" stiffness="nan" n="11"/>
+      <node base_length="8.67208" stiffness="nan" n="128"/>
+      <node base_length="5.52536" stiffness="nan" n="44"/>
+      <node base_length="5.39445" stiffness="nan" n="71"/>
+      <node base_length="4.9046" stiffness="1" n="72"/>
+      <node base_length="6.60934" stiffness="nan" n="125"/>
+      <node base_length="6.91121" stiffness="nan" n="127"/>
+      <node base_length="7.39091" stiffness="nan" n="126"/>
+      <node base_length="6.49932" stiffness="1" n="124"/>
+      <wall w="60"/>
+      <wall w="65"/>
+      <wall w="61"/>
+      <wall w="62"/>
+      <wall w="63"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="27" area="467.589" nofn_pressure="3159.81" target_area="581.997" centroid_y="-58.5808" centroid_x="16.2768" source="false" nofn_average_pressure="296.866" neighbour_number="3" pin_fixed="false" fixed="false" pressure="228.815" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="653.243" lambda_celllength="0" average_neighbor_pressure="217.748" total_neighbour_area="1411.56" boundary="0">
+      <node base_length="8.71361" stiffness="nan" n="11"/>
+      <node base_length="8.94622" stiffness="nan" n="8"/>
+      <node base_length="9.10126" stiffness="nan" n="82"/>
+      <node base_length="9.76005" stiffness="1" n="26"/>
+      <node base_length="6.97808" stiffness="1" n="146"/>
+      <node base_length="6.3838" stiffness="nan" n="28"/>
+      <node base_length="6.55059" stiffness="nan" n="130"/>
+      <node base_length="6.55059" stiffness="nan" n="129"/>
+      <node base_length="9.99839" stiffness="1" n="128"/>
+      <wall w="64"/>
+      <wall w="65"/>
+      <wall w="66"/>
+      <wall w="67"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="28" area="443.783" nofn_pressure="9542.64" target_area="576.684" centroid_y="-18.0397" centroid_x="-14.3609" source="false" nofn_average_pressure="266.967" neighbour_number="6" pin_fixed="false" fixed="false" pressure="265.802" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1483.23" lambda_celllength="0" average_neighbor_pressure="247.206" total_neighbour_area="2722.55" boundary="0">
+      <node base_length="7.51154" stiffness="nan" n="85"/>
+      <node base_length="7.72874" stiffness="nan" n="21"/>
+      <node base_length="7.7752" stiffness="nan" n="148"/>
+      <node base_length="9.23729" stiffness="nan" n="39"/>
+      <node base_length="9.45109" stiffness="nan" n="41"/>
+      <node base_length="7.62063" stiffness="nan" n="132"/>
+      <node base_length="6.56989" stiffness="nan" n="70"/>
+      <node base_length="7.54957" stiffness="nan" n="134"/>
+      <node base_length="7.54957" stiffness="1" n="133"/>
+      <node base_length="6.39188" stiffness="nan" n="131"/>
+      <wall w="69"/>
+      <wall w="70"/>
+      <wall w="71"/>
+      <wall w="77"/>
+      <wall w="72"/>
+      <wall w="73"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="29" area="449.978" nofn_pressure="9428.4" target_area="575.434" centroid_y="2.33048" centroid_x="-16.1774" source="false" nofn_average_pressure="272.324" neighbour_number="6" pin_fixed="false" fixed="false" pressure="250.911" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1580.42" lambda_celllength="0" average_neighbor_pressure="263.403" total_neighbour_area="2674.27" boundary="0">
+      <node base_length="8.87315" stiffness="nan" n="31"/>
+      <node base_length="7.7752" stiffness="nan" n="39"/>
+      <node base_length="7.72874" stiffness="nan" n="148"/>
+      <node base_length="9.61975" stiffness="nan" n="21"/>
+      <node base_length="6.62093" stiffness="1" n="17"/>
+      <node base_length="5.90287" stiffness="nan" n="136"/>
+      <node base_length="6.73044" stiffness="nan" n="12"/>
+      <node base_length="6.79752" stiffness="nan" n="138"/>
+      <node base_length="6.74706" stiffness="nan" n="137"/>
+      <node base_length="9.07868" stiffness="1" n="135"/>
+      <wall w="75"/>
+      <wall w="89"/>
+      <wall w="76"/>
+      <wall w="77"/>
+      <wall w="78"/>
+      <wall w="79"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="30" area="462.81" nofn_pressure="2169.14" target_area="572.934" centroid_y="40.21" centroid_x="-47.5294" source="false" nofn_average_pressure="542.285" neighbour_number="2" pin_fixed="false" fixed="false" pressure="220.249" at_boundary="true" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="498.377" lambda_celllength="0" average_neighbor_pressure="249.188" total_neighbour_area="901.68" boundary="0">
+      <node base_length="10.2596" stiffness="nan" n="4"/>
+      <node base_length="9.99544" stiffness="nan" n="57"/>
+      <node base_length="9.8861" stiffness="nan" n="147"/>
+      <node base_length="7.83477" stiffness="nan" n="73"/>
+      <node base_length="6.55253" stiffness="1" n="75"/>
+      <node base_length="7.33608" stiffness="nan" n="139"/>
+      <node base_length="7.31576" stiffness="nan" n="141"/>
+      <node base_length="7.28014" stiffness="nan" n="140"/>
+      <node base_length="10.239" stiffness="1" n="30"/>
+      <wall w="80"/>
+      <wall w="81"/>
+      <wall w="82"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell index="31" area="440.503" nofn_pressure="8628.91" target_area="575.747" centroid_y="19.4854" centroid_x="6.90921" source="false" nofn_average_pressure="237.353" neighbour_number="6" pin_fixed="false" fixed="false" pressure="270.486" at_boundary="false" div_counter="5" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1487.7" lambda_celllength="0" average_neighbor_pressure="247.95" total_neighbour_area="2725.01" boundary="0">
+      <node base_length="5.43674" stiffness="nan" n="12"/>
+      <node base_length="6.62093" stiffness="nan" n="136"/>
+      <node base_length="9.23697" stiffness="nan" n="17"/>
+      <node base_length="8.50792" stiffness="nan" n="35"/>
+      <node base_length="8.79889" stiffness="nan" n="37"/>
+      <node base_length="4.83496" stiffness="1" n="53"/>
+      <node base_length="6.46648" stiffness="nan" n="143"/>
+      <node base_length="6.47505" stiffness="nan" n="145"/>
+      <node base_length="6.42254" stiffness="nan" n="144"/>
+      <node base_length="8.56006" stiffness="1" n="142"/>
+      <wall w="85"/>
+      <wall w="86"/>
+      <wall w="87"/>
+      <wall w="88"/>
+      <wall w="89"/>
+      <wall w="90"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <boundary_polygon index="-1" area="2201.83" nofn_pressure="6525.55" target_area="1" centroid_y="-0.164815" centroid_x="0.25926" source="false" nofn_average_pressure="300.488" neighbour_number="4" pin_fixed="false" fixed="false" pressure="-4401.67" at_boundary="false" div_counter="0" target_length="0" cell_type="0" dead="false" total_neighbor_pressure="1026.5" lambda_celllength="0" average_neighbor_pressure="256.625" total_neighbour_area="1797.86" boundary="0">
+      <node base_length="nan" stiffness="nan" n="0"/>
+      <node base_length="nan" stiffness="nan" n="1"/>
+      <node n="98"/>
+      <node base_length="nan" stiffness="nan" n="93"/>
+      <node base_length="nan" stiffness="nan" n="77"/>
+      <node n="34"/>
+      <node n="94"/>
+      <node base_length="nan" stiffness="nan" n="25"/>
+      <node base_length="nan" stiffness="nan" n="2"/>
+      <node base_length="nan" stiffness="nan" n="10"/>
+      <node base_length="nan" stiffness="nan" n="81"/>
+      <node base_length="nan" stiffness="nan" n="3"/>
+      <node base_length="nan" stiffness="nan" n="80"/>
+      <node n="87"/>
+      <node n="150"/>
+      <node n="30"/>
+      <node base_length="nan" stiffness="nan" n="4"/>
+      <node base_length="nan" stiffness="nan" n="57"/>
+      <node base_length="nan" stiffness="nan" n="147"/>
+      <node n="73"/>
+      <node base_length="nan" stiffness="nan" n="15"/>
+      <node base_length="nan" stiffness="nan" n="56"/>
+      <node base_length="nan" stiffness="nan" n="20"/>
+      <node base_length="nan" stiffness="nan" n="151"/>
+      <node n="62"/>
+      <node base_length="nan" stiffness="nan" n="5"/>
+      <node base_length="nan" stiffness="nan" n="6"/>
+      <node base_length="nan" stiffness="nan" n="83"/>
+      <node n="101"/>
+      <node base_length="nan" stiffness="nan" n="149"/>
+      <node base_length="nan" stiffness="nan" n="48"/>
+      <node n="38"/>
+      <node base_length="nan" stiffness="nan" n="24"/>
+      <node n="124"/>
+      <node base_length="nan" stiffness="nan" n="7"/>
+      <node base_length="nan" stiffness="nan" n="78"/>
+      <node base_length="nan" stiffness="nan" n="11"/>
+      <node base_length="nan" stiffness="nan" n="8"/>
+      <node base_length="nan" stiffness="nan" n="82"/>
+      <node n="26"/>
+      <node base_length="nan" stiffness="nan" n="9"/>
+      <node base_length="nan" stiffness="nan" n="79"/>
+      <node base_length="nan" stiffness="nan" n="42"/>
+      <node base_length="nan" stiffness="nan" n="109"/>
+      <node n="66"/>
+      <node base_length="nan" stiffness="nan" n="84"/>
+      <node base_length="nan" stiffness="nan" n="14"/>
+      <node base_length="nan" stiffness="nan" n="152"/>
+      <node base_length="nan" stiffness="nan" n="16"/>
+      <wall w="25"/>
+      <wall w="61"/>
+      <wall w="9"/>
+      <wall w="14"/>
+      <wall w="66"/>
+      <wall w="3"/>
+      <wall w="30"/>
+      <wall w="36"/>
+      <wall w="52"/>
+      <wall w="7"/>
+      <wall w="81"/>
+      <wall w="17"/>
+      <wall w="23"/>
+      <wall w="28"/>
+      <wall w="32"/>
+      <wall w="58"/>
+      <wall w="59"/>
+      <chem n="1">
+        <val v="0"/>
+      </chem>
+    </boundary_polygon>
+  </cells>
+  <walls n="92">
+    <wall c1="0" n1="13" n2="46" length="16.8272" viz_flux="0" index="23" c2="8" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="8" n1="121" n2="46" length="4.1988" viz_flux="0" index="22" c2="4" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="1" n1="49" n2="50" length="17.2606" viz_flux="0" index="26" c2="9" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="9" n1="87" n2="30" length="11.7922" viz_flux="0" index="12" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="9" n1="30" n2="50" length="18.4909" viz_flux="0" index="25" c2="5" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="2" n1="59" n2="53" length="10.5693" viz_flux="0" index="28" c2="6" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="10" n1="86" n2="49" length="14.1585" viz_flux="0" index="24" c2="9" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="4" n1="42" n2="66" length="19.2733" viz_flux="0" index="36" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="0" n1="46" n2="67" length="9.54238" viz_flux="0" index="37" c2="4" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="13" n1="66" n2="16" length="35.9201" viz_flux="0" index="0" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="13" n1="16" n2="58" length="11.5373" viz_flux="0" index="30" c2="11" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="0" n1="111" n2="13" length="7.15781" viz_flux="0" index="21" c2="14" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="8" n1="13" n2="44" length="19.6732" viz_flux="0" index="39" c2="14" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="1" n1="33" n2="50" length="71.5781" viz_flux="0" index="43" c2="5" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="15" n1="73" n2="20" length="32.3277" viz_flux="0" index="4" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="9" n1="86" n2="87" length="24.3211" viz_flux="0" index="47" c2="16" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="10" n1="52" n2="86" length="9.99547" viz_flux="0" index="45" c2="16" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="16" n1="10" n2="87" length="40.4816" viz_flux="0" index="46" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="4" n1="66" n2="68" length="7.2409" viz_flux="0" index="49" c2="13" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="13" n1="90" n2="68" length="21.6104" viz_flux="0" index="50" c2="17" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="4" n1="68" n2="67" length="13.5781" viz_flux="0" index="38" c2="17" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="0" n1="67" n2="27" length="18.1889" viz_flux="0" index="11" c2="17" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="17" n1="114" n2="27" length="8.94523" viz_flux="0" index="10" c2="2" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="6" n1="34" n2="94" length="10.3047" viz_flux="0" index="51" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="6" n1="94" n2="95" length="21.6382" viz_flux="0" index="53" c2="18" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="18" n1="94" n2="10" length="32.4464" viz_flux="0" index="2" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="18" n1="10" n2="52" length="11.9449" viz_flux="0" index="27" c2="16" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="18" n1="52" n2="95" length="16.9197" viz_flux="0" index="52" c2="10" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="11" n1="16" n2="98" length="34.4965" viz_flux="0" index="54" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="11" n1="98" n2="99" length="17.2007" viz_flux="0" index="56" c2="19" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="19" n1="98" n2="34" length="29.8104" viz_flux="0" index="15" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="19" n1="34" n2="59" length="22.4633" viz_flux="0" index="31" c2="6" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="12" n1="62" n2="101" length="38.852" viz_flux="0" index="57" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="3" n1="118" n2="102" length="10.3638" viz_flux="0" index="58" c2="12" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="12" n1="101" n2="102" length="21.8302" viz_flux="0" index="59" c2="20" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="3" n1="102" n2="63" length="13.7524" viz_flux="0" index="35" c2="20" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="20" n1="101" n2="38" length="23.9379" viz_flux="0" index="18" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="20" n1="38" n2="63" length="22.6493" viz_flux="0" index="40" c2="7" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="5" n1="139" n2="106" length="9.4387" viz_flux="0" index="61" c2="15" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="15" n1="105" n2="106" length="20.9296" viz_flux="0" index="62" c2="21" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="5" n1="106" n2="33" length="13.6538" viz_flux="0" index="44" c2="21" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="21" n1="117" n2="31" length="5.87989" viz_flux="0" index="13" c2="3" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="0" n1="27" n2="110" length="8.37023" viz_flux="0" index="63" c2="2" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="0" n1="110" n2="111" length="21.0372" viz_flux="0" index="65" c2="22" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="22" n1="110" n2="35" length="13.595" viz_flux="0" index="16" c2="2" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="22" n1="131" n2="111" length="7.67572" viz_flux="0" index="64" c2="14" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="2" n1="114" n2="59" length="22.795" viz_flux="0" index="67" c2="23" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="23" n1="99" n2="59" length="16.7085" viz_flux="0" index="32" c2="19" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="13" n1="58" n2="90" length="8.75901" viz_flux="0" index="48" c2="23" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="23" n1="58" n2="99" length="18.9365" viz_flux="0" index="55" c2="11" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="17" n1="90" n2="114" length="16.8152" viz_flux="0" index="66" c2="23" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="3" n1="117" n2="118" length="18.2096" viz_flux="0" index="70" c2="24" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="24" n1="20" n2="62" length="11.6736" viz_flux="0" index="33" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="15" n1="20" n2="105" length="9.81299" viz_flux="0" index="60" c2="24" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="21" n1="105" n2="117" length="20.7631" viz_flux="0" index="68" c2="24" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="24" n1="62" n2="118" length="20.8732" viz_flux="0" index="69" c2="12" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="4" n1="121" n2="42" length="25.1489" viz_flux="0" index="73" c2="25" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="8" n1="28" n2="121" length="10.1545" viz_flux="0" index="71" c2="25" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="25" n1="26" n2="42" length="32.0203" viz_flux="0" index="72" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="7" n1="38" n2="124" length="19.5557" viz_flux="0" index="74" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="7" n1="124" n2="125" length="23.989" viz_flux="0" index="76" c2="26" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="26" n1="124" n2="11" length="24.5511" viz_flux="0" index="8" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="26" n1="44" n2="125" length="16.8761" viz_flux="0" index="75" c2="14" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="8" n1="44" n2="128" length="10.186" viz_flux="0" index="77" c2="26" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="8" n1="128" n2="28" length="21.3235" viz_flux="0" index="79" c2="27" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="27" n1="128" n2="11" length="11.7857" viz_flux="0" index="7" c2="26" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="27" n1="11" n2="26" length="30.4387" viz_flux="0" index="9" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="27" n1="26" n2="28" length="19.1659" viz_flux="0" index="78" c2="25" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="7" n1="125" n2="70" length="6.39586" viz_flux="0" index="81" c2="14" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="14" n1="131" n2="70" length="22.7834" viz_flux="0" index="82" c2="28" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="7" n1="70" n2="132" length="5.37101" viz_flux="0" index="41" c2="28" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="3" n1="63" n2="39" length="26.6815" viz_flux="0" index="20" c2="28" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="3" n1="132" n2="63" length="80.197" viz_flux="0" index="34" c2="28" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="22" n1="21" n2="131" length="14.5488" viz_flux="0" index="80" c2="28" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="1" n1="33" n2="135" length="12.0428" viz_flux="0" index="83" c2="21" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="1" n1="135" n2="12" length="23.5222" viz_flux="0" index="85" c2="29" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="22" n1="21" n2="17" length="67.5142" viz_flux="0" index="5" c2="29" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="29" n1="39" n2="21" length="18.0688" viz_flux="0" index="6" c2="28" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="29" n1="135" n2="31" length="10.4868" viz_flux="0" index="14" c2="21" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="29" n1="31" n2="39" length="10.2982" viz_flux="0" index="19" c2="3" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="5" n1="30" n2="139" length="25.4696" viz_flux="0" index="87" c2="30" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="30" n1="30" n2="73" length="45.6428" viz_flux="0" index="42" c2="-1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="30" n1="73" n2="139" length="15.6431" viz_flux="0" index="86" c2="15" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="10" n1="49" n2="142" length="8.90991" viz_flux="0" index="88" c2="1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="6" n1="95" n2="143" length="12.0947" viz_flux="0" index="89" c2="10" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="10" n1="142" n2="143" length="22.489" viz_flux="0" index="90" c2="31" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="6" n1="143" n2="53" length="5.493" viz_flux="0" index="29" c2="31" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="2" n1="53" n2="35" length="20.4819" viz_flux="0" index="17" c2="31" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="22" n1="35" n2="17" length="10.6575" viz_flux="0" index="1" c2="31" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="31" n1="12" n2="17" length="12.6554" viz_flux="0" index="3" c2="29" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="31" n1="142" n2="12" length="9.84256" viz_flux="0" index="84" c2="1" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall c1="3" n1="63" n2="132" length="4.98824" viz_flux="0" index="91" c2="7" wall_type="normal">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+  </walls>
+  <nodesets n="0"/>
+  <settings>
+    <setting val="false" name="show_cell_centers"/>
+    <setting val="false" name="show_nodes"/>
+    <setting val="false" name="show_node_numbers"/>
+    <setting val="false" name="show_cell_numbers"/>
+    <setting val="false" name="show_borders_cells"/>
+    <setting val="false" name="show_cell_axes"/>
+    <setting val="false" name="show_cell_strain"/>
+    <setting val="false" name="show_fluxes"/>
+    <setting val="false" name="show_walls"/>
+    <setting val="false" name="save_movie_frames"/>
+    <setting val="false" name="show_only_leaf_boundary"/>
+    <setting val="false" name="cell_growth"/>
+    <setting val="false" name="hide_cells"/>
+  </settings>
+</leaf>

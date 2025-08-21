@@ -1,0 +1,272 @@
+<!DOCTYPE leaf>
+<leaf simtime="1000" date="Thu May  1 13:21:50 2025" name="/home/willem/Documents/VirtualLeaf2021-2.0.0/data/leaves/Waterflux_twocell.xml">
+  <parameter>
+    <par val="white" name="arrowcolor"/>
+    <par val="10" name="arrowsize"/>
+    <par val="red" name="textcolor"/>
+    <par val="1" name="cellnumsize"/>
+    <par val="1" name="nodenumsize"/>
+    <par val="1" name="node_mag"/>
+    <par val="1" name="outlinewidth"/>
+    <par val="forestgreen" name="cell_outline_color"/>
+    <par val="10" name="resize_stride"/>
+    <par val="0" name="export_interval"/>
+    <par val="cell." name="export_fn_prefix"/>
+    <par val="100" name="storage_stride"/>
+    <par val="500" name="xml_storage_stride"/>
+    <par val="auxin_growth" name="datadir"/>
+    <par val="1" name="T"/>
+    <par val="100" name="lambda_length"/>
+    <par val="4" name="yielding_threshold"/>
+    <par val="0" name="lambda_celllength"/>
+    <par val="60" name="target_length"/>
+    <par val="10" name="cell_expansion_rate"/>
+    <par val="10" name="cell_div_expansion_rate"/>
+    <par val="true" name="auxin_dependent_growth"/>
+    <par val="0.0001" name="ode_accuracy"/>
+    <par val="0.4" name="mc_stepsize"/>
+    <par val="0.2" name="mc_cell_stepsize"/>
+    <par val="1000" name="energy_threshold"/>
+    <par val="0" name="bend_lambda"/>
+    <par val="0" name="alignment_lambda"/>
+    <par val="2" name="rel_cell_div_threshold"/>
+    <par val="2" name="rel_perimeter_stiffness"/>
+    <par val="0.05" name="collapse_node_threshold"/>
+    <par val="0.2" name="morphogen_div_threshold"/>
+    <par val="0.01" name="morphogen_expansion_threshold"/>
+    <par val="true" name="copy_wall"/>
+    <par val="0" name="source"/>
+    <par name="D">
+      <valarray>
+        <val v="1e-06"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+      </valarray>
+    </par>
+    <par name="initval">
+      <valarray>
+        <val v="0"/>
+        <val v="1"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+      </valarray>
+    </par>
+    <par val="1" name="k1"/>
+    <par val="0.3" name="k2"/>
+    <par val="1" name="r"/>
+    <par val="1" name="kr"/>
+    <par val="1" name="km"/>
+    <par val="1" name="Pi_tot"/>
+    <par val="0.36" name="transport"/>
+    <par val="1" name="ka"/>
+    <par val="0" name="pin_prod"/>
+    <par val="0" name="pin_prod_in_epidermis"/>
+    <par val="0" name="pin_breakdown"/>
+    <par val="0.001" name="pin_breakdown_internal"/>
+    <par val="0.001" name="aux1prod"/>
+    <par val="0" name="aux1prodmeso"/>
+    <par val="0.001" name="aux1decay"/>
+    <par val="0.1" name="aux1decaymeso"/>
+    <par val="0.036" name="aux1transport"/>
+    <par val="0" name="aux_cons"/>
+    <par val="0.0001" name="aux_breakdown"/>
+    <par val="1" name="kaux1"/>
+    <par val="1" name="kap"/>
+    <par val="0.0001" name="leaf_tip_source"/>
+    <par val="0.0001" name="sam_efflux"/>
+    <par val="10" name="sam_auxin"/>
+    <par val="0" name="sam_auxin_breakdown"/>
+    <par val="0.002" name="van3prod"/>
+    <par val="0.1" name="van3autokat"/>
+    <par val="10" name="van3sat"/>
+    <par val="0.3" name="k2van3"/>
+    <par val="0.1" name="dt"/>
+    <par val="10" name="rd_dt"/>
+    <par val="0.174533" name="potential_slide_angle"/>
+    <par val="50" name="elastic_modulus"/>
+    <par val="true" name="movie"/>
+    <par val="100000" name="nit"/>
+    <par val="65535" name="compatibility_level"/>
+    <par val="1e+06" name="maxt"/>
+    <par val="-1" name="rseed"/>
+    <par val="16" name="constituous_expansion_limit"/>
+    <par val="1" name="vessel_inh_level"/>
+    <par val="0.25" name="vessel_expansion_rate"/>
+    <par val="0" name="d"/>
+    <par val="0" name="e"/>
+    <par val="0" name="f"/>
+    <par val="0" name="c"/>
+    <par val="0" name="mu"/>
+    <par val="0" name="nu"/>
+    <par val="0" name="rho0"/>
+    <par val="0" name="rho1"/>
+    <par val="0" name="c0"/>
+    <par val="0" name="gamma"/>
+    <par val="0" name="eps"/>
+    <par val="0" name="betaN"/>
+    <par val="0" name="gammaN"/>
+    <par val="0" name="betaD"/>
+    <par val="0" name="gammaD"/>
+    <par val="0" name="betaR"/>
+    <par val="0" name="gammaR"/>
+    <par val="0" name="tau"/>
+    <par val="0" name="kt"/>
+    <par val="0" name="kc"/>
+    <par val="0" name="krs"/>
+    <par name="k">
+      <valarray>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+        <val v="0"/>
+      </valarray>
+    </par>
+    <par val="0" name="i1"/>
+    <par val="0" name="i2"/>
+    <par val="false" name="b4"/>
+    <par val="." name="dir1"/>
+    <par val="." name="dir2"/>
+  </parameter>
+  <nodes n="13" target_length="3.09017">
+    <node y="0.725126" x="17.3088" sam="false" fixed="false" boundary="true"/>
+    <node y="9.54366" x="13.5246" sam="false" fixed="false" boundary="true"/>
+    <node y="14.8406" x="4.79409" sam="false" fixed="false" boundary="true"/>
+    <node y="15.5226" x="-6.18733" sam="false" fixed="false" boundary="true"/>
+    <node y="8.95532" x="-14.1114" sam="false" fixed="false" boundary="true"/>
+    <node y="-0.697484" x="-18.9764" sam="false" fixed="false" boundary="true"/>
+    <node y="-9.67235" x="-12.7353" sam="false" fixed="false" boundary="true"/>
+    <node y="-15.2017" x="-2.76639" sam="false" fixed="false" boundary="true"/>
+    <node y="-15.9404" x="6.02578" sam="false" fixed="false" boundary="true"/>
+    <node y="-7.93571" x="12.4654" sam="false" fixed="false" boundary="true"/>
+    <node y="-11.811" x="-6.72215" sam="false" fixed="false" boundary="true"/>
+    <node y="5.28659" x="1.99201" sam="false" fixed="false" boundary="false"/>
+    <node y="-3.48296" x="-1.85932" sam="false" fixed="false" boundary="false"/>
+  </nodes>
+  <cells offsetx="0" magnfication="1" offsety="0" n="2" nchem="1" base_area="293.893">
+    <cell total_neighbor_pressure="567.498" index="0" source="false" target_length="60" nofn_pressure="529.941" pressure="529.941" centroid_x="5.98535" total_neighbour_area="386.251" at_boundary="true" area="400.00" average_neighbor_pressure="567.498" target_area="670" dead="false" div_counter="1" nofn_average_pressure="529.941" pin_fixed="false" centroid_y="-2.24066" lambda_celllength="0" boundary="0" neighbour_number="1" fixed="false" cell_type="0">
+      <node base_length="7.48596" stiffness="1" n="7"/>
+      <node base_length="8.65772" stiffness="1" n="8"/>
+      <node base_length="8.41041" stiffness="1" n="9"/>
+      <node base_length="8.03339" stiffness="1" n="0"/>
+      <node base_length="8.56458" stiffness="1" n="1"/>
+      <node base_length="8.21999" stiffness="1" n="2"/>
+      <node base_length="7.99369" stiffness="1" n="11"/>
+      <node base_length="7.97865" stiffness="1" n="12"/>
+      <node base_length="4.30807" stiffness="1" n="10"/>
+      <wall w="0"/>
+      <wall w="1"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <cell total_neighbor_pressure="529.941" index="1" source="false" target_length="0" nofn_pressure="567.498" pressure="567.498" centroid_x="-7.20025" total_neighbour_area="405.03" at_boundary="true" area="400.00" average_neighbor_pressure="529.941" target_area="670" dead="false" div_counter="1" nofn_average_pressure="567.498" pin_fixed="false" centroid_y="2.99862" lambda_celllength="0" boundary="0" neighbour_number="1" fixed="false" cell_type="0">
+      <node base_length="9.04443" stiffness="100" n="3"/>
+      <node base_length="9.12336" stiffness="100" n="4"/>
+      <node base_length="8.91531" stiffness="100" n="5"/>
+      <node base_length="5.65152" stiffness="100" n="6"/>
+      <node base_length="7.97865" stiffness="100" n="10"/>
+      <node base_length="7.99369" stiffness="100" n="12"/>
+      <node base_length="8.21999" stiffness="100" n="11"/>
+      <node base_length="9.11862" stiffness="100" n="2"/>
+      <wall w="0"/>
+      <wall w="2"/>
+      <chem n="1">
+        <val v="400"/>
+      </chem>
+    </cell>
+    <boundary_polygon total_neighbor_pressure="0" index="-1" source="false" target_length="0" nofn_pressure="0" pressure="2" centroid_x="-0.45099" total_neighbour_area="0" at_boundary="false" area="0" average_neighbor_pressure="nan" target_area="1" dead="false" div_counter="0" nofn_average_pressure="nan" pin_fixed="false" centroid_y="0.316812" lambda_celllength="0" boundary="0" neighbour_number="0" fixed="false" cell_type="0">
+      <node n="0"/>
+      <node n="1"/>
+      <node n="2"/>
+      <node base_length="nan" stiffness="nan" n="3"/>
+      <node n="4"/>
+      <node n="5"/>
+      <node n="6"/>
+      <node n="10"/>
+      <node base_length="nan" stiffness="nan" n="7"/>
+      <node n="8"/>
+      <node n="9"/>
+      <wall w="1"/>
+      <wall w="2"/>
+      <chem n="1">
+        <val v="0"/>
+      </chem>
+    </boundary_polygon>
+  </cells>
+  <walls n="3">
+    <wall n1="2" index="0" c1="0" wall_type="normal" n2="10" viz_flux="0" c2="1" length="29.0308">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall n1="10" index="1" c1="0" wall_type="normal" n2="2" viz_flux="0" c2="-1" length="54.0347">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+    <wall n1="2" index="2" c1="1" wall_type="normal" n2="10" viz_flux="0" c2="-1" length="49.0619">
+      <transporters1>
+        <val v="0"/>
+      </transporters1>
+      <transporters2>
+        <val v="0"/>
+      </transporters2>
+    </wall>
+  </walls>
+  <nodesets n="0"/>
+  <settings>
+    <setting val="false" name="show_cell_centers"/>
+    <setting val="false" name="show_nodes"/>
+    <setting val="false" name="show_node_numbers"/>
+    <setting val="false" name="show_cell_numbers"/>
+    <setting val="false" name="show_borders_cells"/>
+    <setting val="false" name="show_cell_axes"/>
+    <setting val="false" name="show_cell_strain"/>
+    <setting val="true" name="show_fluxes"/>
+    <setting val="false" name="show_walls"/>
+    <setting val="false" name="save_movie_frames"/>
+    <setting val="false" name="show_only_leaf_boundary"/>
+    <setting val="true" name="cell_growth"/>
+    <setting val="false" name="hide_cells"/>
+  </settings>
+</leaf>
