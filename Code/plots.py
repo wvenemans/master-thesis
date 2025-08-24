@@ -1,10 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import glob     
+import pandas as pd
 
 import scipy.stats as stats
 
-from sklearn.cluster import KMeans
+from sklearn.cluster import SpectralClustering
 
 from collections import defaultdict
 
@@ -35,6 +36,10 @@ def main():
     #plotNormalizedPressure()
     #plotNormalizedPressurevsnormalizedArea()
     #plotNormalizedAreavsNeighbours()
+    #generateAreaGrowth()
+    #plotBumpCells()
+    #plotPressureGrowth()
+
 
 
     ###Tables
@@ -496,6 +501,258 @@ def generateAreaGrowth():
     plt.tight_layout()
     plt.show()
 
+"""
+def plotPressureCells() -> None:
+Arguments:
+    None
+Returns:
+    None
+
+Plots the pressure of the cells over time
+    
+"""
+
+
+def plotPressureCells():
+
+    turgor_ref = np.array([])
+    turgor_nonbump_ref = np.array([])
+    turgor_alpha = np.array([])
+    turgor_nonbump_alpha = np.array([])
+    turgor_cc = np.array([])
+    turgor_nonbump_cc = np.array([])
+    turgor_op = np.array([])
+    turgor_nonbump_op = np.array([])
+
+    for file in sorted(glob.glob("/home/willem/Documents/Thesis/Wall experiments/Waterflux_big_ref*/*.xml")):
+
+        tree = ET.parse(file)
+        root = tree.getroot()
+
+        cells = root.findall("./cells/cell[@pressure]")
+
+        turgor = np.array([])
+        turgor_nonbump = np.array([])
+        for cell in cells:
+            try:
+                index = int(cell.get('index'))
+                if (index == 14 or index == 18 or index == 6):
+                    turgor = np.append(turgor, float(cell.get('pressure')))
+                else:
+                    turgor_nonbump = np.append(turgor_nonbump, float(cell.get('pressure')))
+            except (ValueError, TypeError):
+                print(f"Skipping cell in file {file} due to missing or invalid data.")
+
+
+        turgor_ref = np.append(turgor_ref, np.mean(turgor))
+        turgor_nonbump_ref = np.append(turgor_nonbump_ref, np.mean(turgor_nonbump))
+
+    for file in sorted(glob.glob("/home/willem/Documents/Thesis/Wall experiments/Waterflux_big_alpha*/*.xml")):
+        tree = ET.parse(file)
+        root = tree.getroot()
+
+        cells = root.findall("./cells/cell[@pressure]")
+
+        turgor = np.array([])
+        turgor_nonbump = np.array([])
+
+        for cell in cells:
+            try:
+                index = int(cell.get('index'))
+                if (index == 14 or index == 18 or index == 6):
+                    turgor = np.append(turgor, float(cell.get('pressure')))
+                else:
+                    turgor_nonbump = np.append(turgor_nonbump, float(cell.get('pressure')))
+            except (ValueError, TypeError):
+                print(f"Skipping cell in file {file} due to missing or invalid data.")
+
+        turgor_alpha = np.append(turgor_alpha, np.mean(turgor))
+        turgor_nonbump_alpha = np.append(turgor_nonbump_alpha, np.mean(turgor_nonbump))
+
+
+    for file in sorted(glob.glob("/home/willem/Documents/Thesis/Wall experiments/Waterflux_big_cc*/*.xml")):
+        tree = ET.parse(file)
+        root = tree.getroot()
+
+        cells = root.findall("./cells/cell[@pressure]")
+
+        turgor = np.array([])
+        turgor_nonbump = np.array([])
+
+        for cell in cells:
+            try:
+                index = int(cell.get('index'))
+                if (index == 14 or index == 18 or index == 6):
+                    turgor = np.append(turgor, float(cell.get('pressure')))
+                else:
+                    turgor_nonbump = np.append(turgor_nonbump, float(cell.get('pressure')))
+            except (ValueError, TypeError):
+                print(f"Skipping cell in file {file} due to missing or invalid data.")
+
+        turgor_cc = np.append(turgor_cc, np.mean(turgor))
+        turgor_nonbump_cc = np.append(turgor_nonbump_cc, np.mean(turgor_nonbump))
+
+    for file in sorted(glob.glob("/home/willem/Documents/Thesis/Wall experiments/Waterflux_big_om*/*.xml")):
+        tree = ET.parse(file)
+        root = tree.getroot()
+
+        cells = root.findall("./cells/cell[@pressure]")
+
+        turgor = np.array([])
+
+        for cell in cells:
+            try:
+                index = int(cell.get('index'))
+                if (index == 14 or index == 18 or index == 6):
+                    turgor = np.append(turgor, float(cell.get('pressure')))
+                    turgor_nonbump = np.append(turgor_nonbump, float(cell.get('pressure')))
+            except (ValueError, TypeError):
+                print(f"Skipping cell in file {file} due to missing or invalid data.")
+            
+
+        turgor_op = np.append(turgor_op, np.mean(turgor))
+        turgor_nonbump_op = np.append(turgor_nonbump_op, np.mean(turgor_nonbump))
+
+    # Plotting in one graph
+    turgor_ref = turgor_ref[1:]
+    turgor_alpha = turgor_alpha[1:]
+    turgor_cc = turgor_cc[1:]
+    turgor_op = turgor_op[1:]
+
+
+    turgor_nonbump_ref = turgor_nonbump_ref[1:]
+    turgor_nonbump_alpha = turgor_nonbump_alpha[1:]
+    turgor_nonbump_cc = turgor_nonbump_cc[1:]
+    turgor_nonbump_op = turgor_nonbump_op[1:]
+
+
+
+
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(np.arange(500, 10001, 500), turgor_ref, color='blue', label='Reference bump cells')
+    plt.plot(np.arange(500, 10001, 500), turgor_nonbump_ref, color='red', label='Reference non-bump cells')
+    plt.plot(np.arange(500, 10001, 500), turgor_alpha, color='blue', linestyle='-.', label='Alpha+ bump cells')
+    plt.plot(np.arange(500, 10001, 500), turgor_nonbump_alpha, color='red', linestyle='-.', label='Alpha other cells')
+    plt.plot(np.arange(500, 10001, 500), turgor_cc, color='blue', linestyle=':', label='CC- bump cells')
+    plt.plot(np.arange(500, 10001, 500), turgor_nonbump_cc, color='red', linestyle=':', label='CC- non-bump cells')
+    plt.plot(np.arange(500, 10001, 500), turgor_op, color='blue', linestyle='--', label='OP- bump cells')
+    plt.plot(np.arange(500, 10001, 500), turgor_nonbump_op, color='red', linestyle='--', label='OP- non-bump cells')
+
+    plt.xlabel('Simulation Time')
+    plt.ylabel('Average Cell Turgor Pressure')
+    plt.title('Bump Cell Turgor Over Time')
+    plt.legend(bbox_to_anchor=(1, 1), loc='upper center', fontsize='small')
+    plt.show()
+
+
+
+"""
+def plotBumpCells
+Arguments:
+    None
+Returns:
+    None
+Plots the area of the bump cells over time
+"""
+
+def plotBumpCells() -> None:
+
+
+    areabump_ref = np.array([])
+    areabump_alpha = np.array([])
+    areabump_cc = np.array([])
+    areabump_op = np.array([])
+
+    for file in sorted(glob.glob("/home/willem/Documents/Thesis/Wall experiments/Waterflux_big_ref*/*.xml")):
+
+
+        tree = ET.parse(file)
+        root = tree.getroot()
+        
+        cells = root.findall("./cells/cell[@area]")
+
+        area = np.array([])
+        for cell in cells:
+            try:
+                index = int(cell.get('index'))
+                if (index == 14 or index == 18 or index == 6):
+                    area = np.append(area, float(cell.get('area')))
+            except (ValueError, TypeError):
+                print(f"Skipping cell in file {file} due to missing or invalid data.")
+
+        areabump_ref = np.append(areabump_ref, np.mean(area))
+
+    for file in sorted(glob.glob("/home/willem/Documents/Thesis/Wall experiments/Waterflux_big_alpha*/*.xml")):
+        tree = ET.parse(file)
+        root = tree.getroot()
+        
+        cells = root.findall("./cells/cell[@area]")
+
+        area = np.array([])
+        for cell in cells:
+            try:
+                index = int(cell.get('index'))
+                if (index == 14 or index == 18 or index == 6):
+                    area = np.append(area, float(cell.get('area')))
+            except (ValueError, TypeError):
+                print(f"Skipping cell in file {file} due to missing or invalid data.")
+
+        areabump_alpha = np.append(areabump_alpha, np.mean(area))
+
+
+
+
+    for file in sorted(glob.glob("/home/willem/Documents/Thesis/Wall experiments/Waterflux_big_cc*/*.xml")):
+        tree = ET.parse(file)
+        root = tree.getroot()
+
+        cells = root.findall("./cells/cell[@area]")
+
+        area = np.array([])
+
+        for cell in cells:
+            try:
+                index = int(cell.get('index'))
+                if (index == 14 or index == 18 or index == 6):
+                    area = np.append(area, float(cell.get('area')))
+            except (ValueError, TypeError):
+                print(f"Skipping cell in file {file} due to missing or invalid data.")
+
+        areabump_cc = np.append(areabump_cc, np.mean(area))
+
+    for file in sorted(glob.glob("/home/willem/Documents/Thesis/Wall experiments/Waterflux_big_om*/*.xml")):
+        tree = ET.parse(file)
+        root = tree.getroot()
+
+        cells = root.findall("./cells/cell[@area]")
+
+        area = np.array([])
+
+        for cell in cells:
+            try:
+                index = int(cell.get('index'))
+                if (index == 14 or index == 18 or index == 6):
+                    area = np.append(area, float(cell.get('area')))
+            except (ValueError, TypeError):
+                print(f"Skipping cell in file {file} due to missing or invalid data.")
+
+        areabump_op = np.append(areabump_op, np.mean(area))
+
+
+
+    print(areabump_ref)
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(np.arange(0, 10001, 500), areabump_ref, label='Reference')
+    plt.plot(np.arange(0, 10001, 500), areabump_alpha, label='Alpha')
+    plt.plot(np.arange(0, 10001, 500), areabump_cc, label='CC')
+    plt.plot(np.arange(0, 10001, 500), areabump_op, label='OP')
+    plt.xlabel('Simulation Time')
+    plt.ylabel('Average Cell Area')
+    plt.title('Bump Cell Areas Over Time')
+    plt.legend()
+    plt.show()
 
 
 
